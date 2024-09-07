@@ -5,9 +5,12 @@ import Footer from "../components/Footer/Footer";
 import Routers from "../routes/Routers";
 
 const Layout = () => {
-    return (
-        <div>Layout</div>
-    );
-}
+    return <>
+    <Header />
+    <main>
+        <Routers />
+    </main>
+    </>
+};
 
 export default Layout;
