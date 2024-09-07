@@ -2,15 +2,13 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import Layout from './layout/layout';
 
 function App() {
   // const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <h1 className="text-[20px] text-blue-600">Hello react + vite app</h1>
-    </>
-  )
+  return 
+    <Layout />;
 }
 
 export default App
