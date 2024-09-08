@@ -45,7 +45,7 @@ const Header = () => {
 
     const toggleMenu = () => {
         menuRef.current.classList.toggle('show__menu');
-    }
+    };
 
 
     return <header className="header flex items-center" ref={headerRef}>
