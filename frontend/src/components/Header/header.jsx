@@ -31,12 +31,12 @@ const Header = () => {
                 </div>
 
                 {/* Menu */}
-                <div classNme="navigation">
-                    <ul classNme="menu flex items-center gap-[2.7rem]">
+                <div className="navigation">
+                    <ul className="menu flex items-center gap-[2.7rem]">
                         {
                             navLinks.map((link, index) => {
                                 return <li key={index}>
-                                    <NavLink to={link.path} className={navClass=> nacClass.isActive ? 'text-primaryColor text-[16px] leading-7 font-[600]' : 'text-textColor text-[16px] leading-7 font[500]'}>{link.display}</NavLink>
+                                    <NavLink to={link.path} className={navClass=> navClass.isActive ? 'text-primaryColor text-[16px] leading-7 font-[600]' : 'text-textColor text-[16px] leading-7 font[500]'}>{link.display}</NavLink>
                                 </li>
                             })
                         }
