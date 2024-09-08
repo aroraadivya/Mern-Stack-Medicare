@@ -44,7 +44,7 @@ const Header = () => {
     });
 
 
-    return <header className="header flex items-center">
+    return <header className="header flex items-center" ref={headerRef}>
         <div className="container">
             <div className="flex items-center justify-between">
                 {/* logo */}
