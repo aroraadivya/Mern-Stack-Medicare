@@ -10,7 +10,7 @@
 
 @layer components{
     .container{
-        @apply max-w-full wq-[1440px] px-5 mx-auto;
+        @apply max-w-full w-[1440px] px-5 mx-auto;
     }
 
     .btn{
