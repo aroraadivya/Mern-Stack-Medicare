@@ -1,10 +1,10 @@
-import Home from '../pages/Home';
-import Services from '../pages/Services';
-import Login from '../pages/Login';
-import Signup from '../pages/Signup';
-import Contact from "../pages/Contact";
-import Doctors from "../pages/Doctors/Doctors";
-import DoctorDetails from "../pages/Doctors/DoctorDetails"; // Make sure this file exists and has a .jsx extension
+import Home from '../pages/Home.jsx';
+import Services from '../pages/Services.jsx';
+import Login from '../pages/Login.jsx';
+import Signup from '../pages/Signup.jsx';
+import Contact from "../pages/Contact.jsx";
+import Doctors from "../pages/Doctors/Doctors.jsx";
+import DoctorDetails from "../pages/Doctors/DoctorsDetails.jsx";
 
 import { Routes, Route } from 'react-router-dom';
 
