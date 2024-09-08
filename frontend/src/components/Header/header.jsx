@@ -36,7 +36,7 @@ const Header = () => {
                         {
                             navLinks.map((link, index) => {
                                 return <li key={index}>
-                                    <NavLink to={link.path} className={navClass=> nacClass.isActive ? 'text-primaryColor text-[16px] leading-7 font-[600]' : 'text-textColor text-[16px] leading-7 font[500]'}>{link.display}</NavLink>
+                                    <NavLink to={link.path} className={navClass=> navClass.isActive ? 'text-primaryColor text-[16px] leading-7 font-[600]' : 'text-textColor text-[16px] leading-7 font[500]'}>{link.display}</NavLink>
                                 </li>
                             })
                         }
