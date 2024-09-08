@@ -4,7 +4,7 @@ import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 import Contact from "../pages/Contact";
 import Doctors from "../pages/Doctors/Doctors";
-import DoctorDetails from "../pages/Doctors/DoctorDetails";
+import DoctorDetails from "../pages/Doctors/DoctorDetails"; // Make sure this file exists and has a .jsx extension
 
 import { Routes, Route } from 'react-router-dom';
 
