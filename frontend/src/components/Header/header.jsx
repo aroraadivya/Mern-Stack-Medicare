@@ -38,6 +38,11 @@ const Header = () => {
         });
     }
 
+    useEffect(() => {
+        handleSAtickyHeader();
+        return() => window.removeEventListener('scroll', handleSAtickyHeader);
+    });
+
 
     return <header className="header flex items-center">
         <div className="container">
