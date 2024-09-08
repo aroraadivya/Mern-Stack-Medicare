@@ -44,7 +44,7 @@ const Header = () => {
     });
 
     const toggleMenu = () => {
-        menuRef.current.classList.toggle('show_active');
+        menuRef.current.classList.toggle('show__menu');
     }
 
 
