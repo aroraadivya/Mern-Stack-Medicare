@@ -21,6 +21,12 @@ const Home = () => {
 
                         <button className='btn'>Request an Appointment</button>
                     </div>
+                    {/* hero counter */}
+                    <div className='mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]'>
+                        <div>
+                            <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor'>30+</h2> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
