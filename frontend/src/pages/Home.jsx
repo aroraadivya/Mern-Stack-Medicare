@@ -16,7 +16,10 @@ const Home = () => {
                         </h1>
                         <p className='text__para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum, ad culpa accusamus sit 
                             facere neque illo ex quasi voluptates, quibusdam pariatur aperiam distinctio vitae. 
-                            Veniam mollitia repellendus similique commodi.</p>
+                            Veniam mollitia repellendus similique commodi.
+                        </p>
+
+                        <button className='btn'>Request an Appointment</button>
                     </div>
                 </div>
             </div>
