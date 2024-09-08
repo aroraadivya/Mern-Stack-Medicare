@@ -31,8 +31,8 @@ const Header = () => {
                 </div>
 
                 {/* Menu */}
-                <div classNme="navigation">
-                    <ul classNme="menu flex items-center gap-[2.7rem]">
+                <div className="navigation">
+                    <ul className="menu flex items-center gap-[2.7rem]">
                         {
                             navLinks.map((link, index) => {
                                 return <li key={index}>
