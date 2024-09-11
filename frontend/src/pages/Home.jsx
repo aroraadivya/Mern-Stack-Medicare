@@ -52,8 +52,9 @@ const Home = () => {
                 {/* hero content */}
 
                 <div>
-                    <img src={heroImg01} alt=''></img>
+                    <img className='w-full' src={heroImg01} alt=''></img>
                 </div>
+                
             </div>
         </div>
     </section> 
