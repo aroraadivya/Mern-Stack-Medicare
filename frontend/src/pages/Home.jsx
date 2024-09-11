@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImg01 from '../assets/images/hero-img01.png';
 
 const Home = () => {
     return <>
@@ -47,6 +48,11 @@ const Home = () => {
                             <p className='text__para'>Patient Satisfaction</p>
                         </div>
                     </div>
+                </div>
+                {/* hero content */}
+
+                <div>
+                    <img src={heroImg01} alt=''></img>
                 </div>
             </div>
         </div>
