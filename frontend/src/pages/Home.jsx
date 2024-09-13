@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImg01 from '../assets/images/hero-img01.png';
+import heroImg02 from '../assets/images/hero-img02.png';
 
 const Home = () => {
     return <>
@@ -54,7 +55,9 @@ const Home = () => {
                 <div>
                     <img className='w-full' src={heroImg01} alt=''></img>
                 </div>
-                
+                <div className='mt-[30px]'>
+                    <img src={heroImg02} alt=''></img>
+                </div>
             </div>
         </div>
     </section> 
