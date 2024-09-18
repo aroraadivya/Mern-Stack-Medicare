@@ -4,6 +4,7 @@ import heroImg02 from '../assets/images/hero-img02.png';
 
 const Home = () => {
     return <>
+    
     {/* hero section */}
     <>
     <section className='hero__section pt-[60px] 2xl:h-[800px]'>
