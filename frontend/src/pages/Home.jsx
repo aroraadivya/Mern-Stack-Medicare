@@ -106,12 +106,12 @@ const Home = () => {
 
                     <div className='py-[30px] px-5'>
                         <div className='flex items-center justify-center'>
-                            <img src={icon01} alt=''></img>
+                            <img src={icon02} alt=''></img>
                         </div>
 
                         <div className='mt-[30px] px-5'>
                             <h2 className='text-[26px] leading-9 text-headingColor font-[700] text-center'>
-                                Find a Doctor
+                                Find a Location
                             </h2>
                             <p className='text-[16px] leading-7 text-textColor font-[400] mt-4 text-center'>
                                 World-class care for everyone. Our health system offers unmatched, expert health care.From the lab to the clinic.
