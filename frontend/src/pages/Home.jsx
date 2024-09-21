@@ -73,6 +73,16 @@ const Home = () => {
                     Providing the best medical services.
                 </h2>
             </div>
+            <p className='text__para text-center'>
+                world-class care for everyone. our health System offers unmatched, expert health care.
+            </p>
+        </div>
+
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
+
+            <div className='py-[30px] px-5'>
+                <div className='flex items-center justify-center'><img src={icon01} alt=''></img></div>
+            </div>
         </div>
     </section>
     </>
