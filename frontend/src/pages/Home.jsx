@@ -144,7 +144,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/*  */}
+            <About/>
             
         </>
 
