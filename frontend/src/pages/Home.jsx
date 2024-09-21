@@ -64,6 +64,7 @@ const Home = () => {
             </div>
         </div>
     </section> 
+    {/* hero section ends */}
     </>
 
     </>
