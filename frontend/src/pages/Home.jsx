@@ -4,7 +4,6 @@ import heroImg02 from '../assets/images/hero-img02.png';
 
 const Home = () => {
     return <>
-    
     {/* hero section */}
     <>
     <section className='hero__section pt-[60px] 2xl:h-[800px]'>
@@ -52,11 +51,13 @@ const Home = () => {
                 </div>
                 {/* hero content */}
 
-                <div>
-                    <img className='w-full' src={heroImg01} alt=''></img>
-                </div>
-                <div className='mt-[30px]'>
-                    <img src={heroImg02} alt=''></img>
+                <div className='flex gap-[30px] justify-end'>
+                    <div>
+                        <img className='w-full' src={heroImg01} alt=""></img>
+                    </div>
+                    <div className='mt-[30px]'>
+                        <img src={heroImg02} alt='' className='w-full mb-[30px]'></img>
+                    </div>
                 </div>
             </div>
         </div>
