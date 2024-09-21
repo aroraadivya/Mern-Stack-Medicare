@@ -3,6 +3,7 @@ import heroImg01 from '../assets/images/hero-img01.png';
 import heroImg02 from '../assets/images/hero-img02.png';
 import heroImg03 from '../assets/images/hero-img03.png';
 import icon01 from '../assets/images/icon01.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return <>
@@ -93,6 +94,10 @@ const Home = () => {
                             <p className='text-[16px] leading-7 text-textColor font-[400] mt-4 text-center'>
                                 World-class care for everyone. Our health system offers unmatched, expert health care.From the lab to the clinic.
                             </p>
+
+                            <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center group hover:bg-primaryColor hover:border-nome'>
+
+                            </Link>
                         </div>
                     </div>
                 </div>
