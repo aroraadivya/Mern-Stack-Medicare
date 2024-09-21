@@ -1,6 +1,7 @@
 import React from 'react';
 import heroImg01 from '../assets/images/hero-img01.png';
 import heroImg02 from '../assets/images/hero-img02.png';
+import heroImg03 from '../assets/images/hero-img03.png';
 
 const Home = () => {
     return <>
@@ -57,6 +58,7 @@ const Home = () => {
                     </div>
                     <div className='mt-[30px]'>
                         <img src={heroImg02} alt='' className='w-full mb-[30px]'></img>
+                        <img src={heroImg03} alt='' className='w-full'></img>
                     </div>
                 </div>
             </div>
