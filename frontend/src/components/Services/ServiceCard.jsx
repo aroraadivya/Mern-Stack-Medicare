@@ -10,6 +10,7 @@ const ServiceCard = ({ item, index }) => {
             </h2>
             <p className='text-[16px] leading-7 fomt-[400] text-textColor mt-4'>
                 {desc}
+                
             </p>
         </div>
     )
