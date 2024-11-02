@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsArrowRight } from "react-icons/bs";
 
 const ServiceCard = ({ item, index }) => {
     const { name, desc, bgColor, textColor } = item;
