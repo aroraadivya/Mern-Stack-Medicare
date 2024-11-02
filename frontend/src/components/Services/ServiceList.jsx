@@ -1,4 +1,5 @@
 import React from 'react';
+import { services } from './../../assets/data/services';
 
 const ServiceList = () => {
     return (
