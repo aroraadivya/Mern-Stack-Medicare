@@ -1,6 +1,6 @@
 import React from 'react';
 import { services } from './../../assets/data/services';
-import ServiceCard from './ServiceCard';
+import ServiceCard from './ServiceCard.jsx';
 
 
 const ServiceList = () => {
