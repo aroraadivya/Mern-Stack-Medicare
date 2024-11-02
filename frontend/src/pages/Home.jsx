@@ -79,7 +79,7 @@ const Home = () => {
                         <h2 className='heading text-center'>Our Medical Services</h2>
                         <p className='text__para text-center'>World-class care for everyone. Our health system offers unmatched, expert health care.</p>
                     </div>
-                    <ServiceList />
+                    {/* <ServiceList /> */}
                 </div>
             </section>
             {/* Services Section Ends */}
@@ -107,9 +107,9 @@ const ServiceCard = ({ icon, title }) => (
             <p className='text-[16px] leading-7 text-textColor font-[400] mt-4 text-center'>
                 World-class care for everyone. Our health system offers unmatched, expert health care. From the lab to the clinic.
             </p>
-            {/* <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center group hover:bg-primaryColor hover:border-none'>
+            <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center group hover:bg-primaryColor hover:border-none'>
                 <BsArrowRight className='group-hover:text-white w-6 h-5' />
-            </Link> */}
+            </Link>
         </div>
     </div>
 );
