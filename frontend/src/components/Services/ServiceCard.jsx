@@ -13,7 +13,6 @@ const ServiceCard = ({ item, index }) => {
             </p>
 
             <div className='flex items_center justify-between mt-[30px]'>
-
             </div>
         </div>
     )
