@@ -10,6 +10,7 @@ import { BsArrowRight } from 'react-icons/bs';
 import About from '../components/About/About';
 import ServiceList from '../components/Services/ServiceList';
 import ServiceCard from '../components/Services/ServiceCard';
+import featureImg from '../assets/images/feature-img.png';
 
 const Home = () => {
     return <>
