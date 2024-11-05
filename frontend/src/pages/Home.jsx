@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import About from '../components/About/About';
 import ServiceList from '../components/Services/ServiceList';
+import ServiceCard from '../components/Services/ServiceCard';
 
 const Home = () => {
     return <>
@@ -161,6 +162,7 @@ const Home = () => {
 
             {/* Services section ends */}
             
+            < ServiceCard />
         </>
 
     </>
