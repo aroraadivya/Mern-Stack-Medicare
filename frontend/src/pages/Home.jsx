@@ -175,6 +175,10 @@ const Home = () => {
                             <li className='text__para'>2. Search for your physician here, and contact their office.</li>
                             <li className='text__para'>3. View our physicians who are accepting new patients, use the online scheduling tool to select an appointment time.</li>
                         </ul>
+
+                        <Link to="/">
+                            <button className='btn'>Learn More</button>
+                        </Link>
                     </div>
                 </div>
             </section>
