@@ -183,7 +183,7 @@ const Home = () => {
 
                     {/* Feature Image */}
                     <div className='relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0'>
-                        <img src={featureImg} alt='' className='w-f3/4'/>
+                        <img src={featureImg} alt='' className='w-3/4'/>
                     </div>
                 </div>
             </section>
