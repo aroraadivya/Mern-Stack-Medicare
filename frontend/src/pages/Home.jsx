@@ -11,6 +11,7 @@ import About from '../components/About/About';
 import ServiceList from '../components/Services/ServiceList';
 import ServiceCard from '../components/Services/ServiceCard';
 import featureImg from '../assets/images/feature-img.png';
+import videoIcon from '../assets/images/video-icon.png';
 
 const Home = () => {
     return <>
@@ -196,7 +197,10 @@ const Home = () => {
                                         10:00
                                     </p>
                                 </div>
-                            </div>
+                                <span className='w-5 h-5 lg:w-[34px] lg:h-[34px] flex items-center justify-center bg-yellowColor rounded py-1 px-[6px] lg:py-3 lg:px-[9px]'>
+                                    <img src={videoIcon} alt=''></img>
+                                </span>
+                            </div>  
                         </div>
                     </div>
                 </div>
