@@ -207,7 +207,7 @@ const Home = () => {
                             </div>
 
                             <div className='flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]'>
-                                <img src='' alt=''></img>
+                                <img src={avatarIcon} alt=''></img>
                             </div>
                         </div>
                     </div>
