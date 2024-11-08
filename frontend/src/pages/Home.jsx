@@ -218,6 +218,9 @@ const Home = () => {
             {/* Feature Section ends */}
 
             {/* Our Great Doctors start*/}
+            <section>
+                <div className='container'></div>
+            </section>
             {/* Our great dotors section end */}
         </>
 
