@@ -13,6 +13,7 @@ import ServiceCard from '../components/Services/ServiceCard';
 import featureImg from '../assets/images/feature-img.png';
 import videoIcon from '../assets/images/video-icon.png';
 import avatarIcon from '../assets/images/avatar-icon.png';
+
 const Home = () => {
     return <>
         {/* hero section */}
