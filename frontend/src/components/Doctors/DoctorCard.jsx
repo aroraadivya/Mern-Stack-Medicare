@@ -26,7 +26,7 @@ const DoctorCard = ({doctor}) => {
           <span className='flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] leading-7 font-semibold text-headingColor'>
             <img src={starIcon} alt=''/>{avgRating}
           </span>
-          <span>({totalRating})</span>
+          <span className='flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] leading-7 font-semibold text-headingColor'>({totalRating})</span>
         </div>
       </div>
     </div>
