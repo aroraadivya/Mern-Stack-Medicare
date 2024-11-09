@@ -8,4 +8,4 @@ const DoctorCard = () => {
   )
 }
 
-export default DoctorCard
+export default DoctorCard;
