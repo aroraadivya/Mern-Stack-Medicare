@@ -32,7 +32,7 @@ const DoctorCard = ({doctor}) => {
 
       <div className='mt-[18px] lg:mt-5 flex items-center justify-between'>
         <div>
-          <h3 className='text-[16px] leading-7 lg:text-[18px] lg:leading-[30px] font-semibold'>+{totalPatients} patients</h3>
+          <h3 className='text-[16px] leading-7 lg:text-[18px] lg:leading-[30px] font-semibold text-headingColor'>+{totalPatients} patients</h3>
         </div>
       </div>
     </div>
