@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import starIcon from '../../assets/images/Star.png';
 
 const DoctorCard = ({doctor}) => {
 
@@ -16,7 +17,7 @@ const DoctorCard = ({doctor}) => {
 
       <div className='mt-2 lg:mt-4 flex items-center justify-between'>
         <span>
-          
+
         </span>
       </div>
     </div>
