@@ -30,7 +30,7 @@ const DoctorCard = ({doctor}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default DoctorCard;
