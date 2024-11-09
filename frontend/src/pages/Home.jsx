@@ -13,6 +13,7 @@ import ServiceCard from '../components/Services/ServiceCard';
 import featureImg from '../assets/images/feature-img.png';
 import videoIcon from '../assets/images/video-icon.png';
 import avatarIcon from '../assets/images/avatar-icon.png';
+import DoctorList from '../components/Doctors/DoctorList';
 
 const Home = () => {
     return <>
@@ -224,6 +225,8 @@ const Home = () => {
                         <h2 className='heading text-center'>Our great doctors</h2>
                         <p className='text__para text-center'>World-class care for everyone. Our health system offers unmatched, expert health care.</p>
                     </div>
+
+                    < DoctorList />
                 </div>
             </section>
             {/* Our great dotors section end */}
