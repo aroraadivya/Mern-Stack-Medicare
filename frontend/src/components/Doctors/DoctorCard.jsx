@@ -19,7 +19,7 @@ const DoctorCard = ({doctor}) => {
 
       <div className='mt-2 lg:mt-4 flex items-center justify-between'>
         <span>
-
+          {specialization}
         </span>
       </div>
     </div>
