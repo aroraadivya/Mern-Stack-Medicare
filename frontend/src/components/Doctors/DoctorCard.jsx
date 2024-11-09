@@ -3,8 +3,13 @@ import React from 'react'
 const DoctorCard = ({doctor}) => {
 
   const {name, avgRating, totalrating, photo, specialization, totalPatients, hospital} = doctor;
+  
   return (
-    <div>DoctorCard</div>
+    <div className='p-3 lg:p-5'>
+      <div>
+        <img src={photo} alt=''></img>
+      </div>
+    </div>
   )
 }
 
