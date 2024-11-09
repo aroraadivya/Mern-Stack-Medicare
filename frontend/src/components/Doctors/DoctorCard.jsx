@@ -1,5 +1,6 @@
 import React from 'react';
 import starIcon from '../../assets/images/Star.png';
+import { Link } from 'react-router-dom';
 
 const DoctorCard = ({doctor}) => {
 
