@@ -235,7 +235,7 @@ const Home = () => {
             <section>
                 <div className='container'>
                     <div className='flex justify-between gap=[50px] lg:gap-0'>
-                        <div><img src={faqImg} alt=''/></div>
+                        <div className='w-1/2 hidden md:block'><img src={faqImg} alt=''/></div>
                     </div>
                 </div>
             </section>
