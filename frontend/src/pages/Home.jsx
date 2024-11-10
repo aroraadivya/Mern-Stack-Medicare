@@ -241,7 +241,7 @@ const Home = () => {
                         <div className='w-full md:w-1/2'>
                             <h2 className='heading'>Most questions by our beloved patients.</h2>
 
-                            <FaqList />
+                            
                         </div>
                     </div>
                 </div>
