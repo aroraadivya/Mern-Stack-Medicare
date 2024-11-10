@@ -1,5 +1,5 @@
 import React from 'react';
-import { fags } from './../../assets/data/fags';
+import { faqs } from './../../assets/data/faqs';
 import FaqItem from './FaqItem';
 
 const FaqList = () => {
