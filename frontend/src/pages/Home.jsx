@@ -230,6 +230,16 @@ const Home = () => {
                 </div>
             </section>
             {/* Our great dotors section end */}
+
+            {/* faq section starts */}
+            <section>
+                <div className='container'>
+                    <div className='flex justify-between gap=[50px] lg:gap-0'>
+                        <div><img src={faqImg} alt=''/></div>
+                    </div>
+                </div>
+            </section>
+            {/* faq section ends */}
         </>
 
     </>
