@@ -16,7 +16,7 @@ import avatarIcon from '../assets/images/avatar-icon.png';
 import DoctorList from '../components/Doctors/DoctorList';
 import faqImg from '../assets/images/faq-img.png';
 import FaqList from '../components/Faq/FaqList';
-import FaqItem from '../components/Faq/FaqCard';
+import FaqItem from '../components/Faq/FaqItem';
 
 const Home = () => {
     return <>
