@@ -36,7 +36,7 @@ const DoctorCard = ({doctor}) => {
           <p className='text-[14px] leading-6 font-[400] text-textColor'>At {hospital}</p>
         </div>
 
-        <Link to='/doctors/'>
+        <Link to='/doctors/1'>
         </Link>
       </div>
     </div>
