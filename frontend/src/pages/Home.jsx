@@ -14,6 +14,7 @@ import featureImg from '../assets/images/feature-img.png';
 import videoIcon from '../assets/images/video-icon.png';
 import avatarIcon from '../assets/images/avatar-icon.png';
 import DoctorList from '../components/Doctors/DoctorList';
+import faqImg from '../assets/images/faq-img.png';
 
 const Home = () => {
     return <>
