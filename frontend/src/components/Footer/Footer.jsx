@@ -5,7 +5,9 @@ import { RiLinkedinFill } from 'react-icons/ri';
 import { AiFillYoutube, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai';
 
 const socialLinks = [
-    
+    {
+        path: 'https://www.youtube.com/watch'
+    },
 ];
 const Footer = () => {
     return (
