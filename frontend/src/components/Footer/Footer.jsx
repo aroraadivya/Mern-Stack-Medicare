@@ -93,7 +93,7 @@ const Footer = () => {
 
                     <ul>
                         {quickLinks01.map((item,index)=> <li key={index} className='mb-4'> <Link to={item.path}>
-                        {item}
+                        {item.display}
                         </Link></li>)}
                     </ul>
                 </div>
