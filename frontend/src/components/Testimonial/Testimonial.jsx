@@ -42,7 +42,7 @@ const Testimonial = () => {
                         </div>
                     </div>\
 
-                    <p className='text-[16px] leading-7'></p>
+                    <p className='text-[16px] leading-7'>"I have taken medical services from them. They treat so well and they are providing the best medical services."</p>
                 </div>
             </SwiperSlide>
         </Swiper>    
