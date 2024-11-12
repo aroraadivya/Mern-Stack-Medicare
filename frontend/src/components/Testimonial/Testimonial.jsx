@@ -35,7 +35,7 @@ const Testimonial = () => {
                         </div>
                     </div>
                 </div>
-              </SwiperSlide>
+            </SwiperSlide>
         </Swiper>    
     </div>
   )
