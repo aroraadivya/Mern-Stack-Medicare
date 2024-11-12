@@ -42,7 +42,7 @@ const Testimonial = () => {
                         </div>
                     </div>\
 
-                    
+                    <p className='text-[16px] leading-7'></p>
                 </div>
             </SwiperSlide>
         </Swiper>    
