@@ -2,6 +2,7 @@ import React from 'react';
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Testimonial = () => {
   return (
