@@ -38,7 +38,7 @@ const Testimonial = () => {
             </SwiperSlide>
         </Swiper>    
     </div>
-  )
-}
+  );
+};
 
 export default Testimonial;
