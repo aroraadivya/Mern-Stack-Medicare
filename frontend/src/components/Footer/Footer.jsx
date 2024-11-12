@@ -42,7 +42,9 @@ const quickLinks01 = [
     },
 ];
 
-
+const quickLinks02 = [
+    
+];
 const Footer = () => {
     return (
         <div>Footer</div>
