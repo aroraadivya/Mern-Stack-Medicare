@@ -9,7 +9,7 @@ import { HiStar } from 'react-icons/hi';
 const Testimonial = () => {
   return (
     <div className='mt-[30px] lg:mt-[55px]'>
-        <swiper modules={[Pagination]} spaceBetween={30} slidesPerView={1} pagination={{clickable:true}}
+        <Swiper modules={[Pagination]} spaceBetween={30} slidesPerView={1} pagination={{clickable:true}}
         breakpoints={{
             640: {
                 slidesPerView: 1,
@@ -24,8 +24,7 @@ const Testimonial = () => {
                 spaceBetween: 30,
               },
         }}>
-
-        </swiper>
+        </Swiper>
     </div>
   )
 }
