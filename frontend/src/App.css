@@ -33,6 +33,10 @@ body{
   box-shadow: 0px 20px 70px rgba(0, 103, 255, 0.3) !important;
 }
 
+.swiper-slide.swiper-slide-next h4, .swiper-slide.swiper-slide-next{
+  
+}
+
 .sticky__header{
   width:100px;
   height:80px;
