@@ -22,6 +22,10 @@ const socialLinks = [
         icon: <RiLinkedinFill className='group-hover:text-white w-4 h-5' />
     },
 ];
+
+const quickLinks01 = [
+    
+];
 const Footer = () => {
     return (
         <div>Footer</div>
