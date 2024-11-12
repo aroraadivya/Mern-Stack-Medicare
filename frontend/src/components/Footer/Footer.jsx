@@ -24,7 +24,10 @@ const socialLinks = [
 ];
 
 const quickLinks01 = [
-    
+    {
+        path: '/home',
+        display: 'Home',
+    },
 ];
 const Footer = () => {
     return (
