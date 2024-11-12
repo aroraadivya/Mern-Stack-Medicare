@@ -66,6 +66,10 @@ const quasiLinks03 = [
         path: '/',
         display: 'Donate',
     },
+    {
+        path: '/',
+        display: 'Contact Us',
+    },
 ];
 const Footer = () => {
     return (
