@@ -28,6 +28,9 @@ const quickLinks01 = [
         path: '/home',
         display: 'Home',
     },
+    {
+        path: '/',
+    },
 ];
 const Footer = () => {
     return (
