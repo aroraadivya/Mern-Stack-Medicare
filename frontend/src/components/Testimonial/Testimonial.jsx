@@ -30,7 +30,7 @@ const Testimonial = () => {
                         <img src={patientAvatar} alt='' />
                         <div>
                             <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>
-                                  Muhbur Rahman
+                                Muhbur Rahman
                               </h4>
                           </div>
                       </div>
