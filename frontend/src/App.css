@@ -29,6 +29,7 @@ body{
 
 .swiper-slide.swiper-slide-next{
   background: #0067ff;
+  border-radius: 12px;
 }
 
 .sticky__header{
