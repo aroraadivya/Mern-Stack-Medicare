@@ -40,9 +40,9 @@ const Testimonial = () => {
                                 <HiStar className='text-yellowColor w-[18px] h-5' />
                             </div>
                         </div>
-                    </div>\
+                    </div>
 
-                    <p className='text-[16px] leading-7'>"I have taken medical services from them. They treat so well and they are providing the best medical services."</p>
+                    <p className='text-[16px] leading-7 mt-4 text-textColor fint-[400]'>"I have taken medical services from them. They treat so well and they are providing the best medical services."</p>
                 </div>
             </SwiperSlide>
         </Swiper>    
