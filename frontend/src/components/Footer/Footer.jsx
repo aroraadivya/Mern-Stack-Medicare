@@ -61,7 +61,7 @@ const quickLinks02 = [
     },
 ];
 
-const quasiLinks03 = [
+const quickLinks03 = [
     {
         path: '/',
         display: 'Donate',
