@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Testimonial = () => {
   return (
@@ -8,4 +8,4 @@ const Testimonial = () => {
   )
 }
 
-export default Testimonial
+export default Testimonial;
