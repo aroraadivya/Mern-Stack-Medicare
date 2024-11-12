@@ -1,6 +1,7 @@
 import React from 'react';
 import FaqList from './FaqList';
 import { useState } from 'react';
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
 const FaqItem = ({item}) => {
   return (
