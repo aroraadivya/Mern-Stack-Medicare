@@ -80,6 +80,7 @@ const Footer = () => {
             <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
                 <div>
                     <img src={logo} alt='' />
+                    <p></p>
                 </div>
             </div>
         </div>
