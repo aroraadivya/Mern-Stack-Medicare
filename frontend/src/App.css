@@ -10,6 +10,10 @@ body{
   font-family: "Manrope", sans-serif;
 }
 
+.swiper-pagination-bullet{
+  
+}
+
 .sticky__header{
   width:100px;
   height:80px;
