@@ -83,7 +83,7 @@ const Footer = () => {
                     <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Copyright {year} developed by Divya Arora.</p>
 
                     <div className='flex items-center gap-3 mt-4'>
-                        {socialLinks.map((link, index)=> (<Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center hover:bg-primaryColor hover:bo'>
+                        {socialLinks.map((link, index)=> (<Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center hover:bg-primaryColor hover:border-none'>
                         {link.icon}</Link>))}
                     </div>
                 </div>
