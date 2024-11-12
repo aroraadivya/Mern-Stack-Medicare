@@ -27,6 +27,10 @@ body{
   padding-bottom: 70px !important;
 }
 
+.swiper-slide.swiper-slide-next{
+  
+}
+
 .sticky__header{
   width:100px;
   height:80px;
