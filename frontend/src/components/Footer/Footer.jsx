@@ -75,7 +75,9 @@ const Footer = () => {
 
     const year = new Date().getFullYear();
 
-    return
+    return <footer>
+        
+    </footer>
 };
 
 export default Footer;
