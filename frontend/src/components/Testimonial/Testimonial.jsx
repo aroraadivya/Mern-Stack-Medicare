@@ -26,18 +26,7 @@ const Testimonial = () => {
         }}>
         </Swiper>
 
-        <SwiperSlide>
-            <div className='py-[30px] px-5 rounded-3'>
-                <div className='flex items-center gap-[13px]'>
-                    <img src={patientAvatar} alt=''/>
-                    <div>
-                        <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>
-                            Muhbur Rahman
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </SwiperSlide>
+        
     </div>
   )
 }
