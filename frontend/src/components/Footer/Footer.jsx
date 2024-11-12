@@ -81,6 +81,8 @@ const Footer = () => {
                 <div>
                     <img src={logo} alt='' />
                     <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Copyright {year} developed by Divya Arora.</p>
+
+                    
                 </div>
             </div>
         </div>
