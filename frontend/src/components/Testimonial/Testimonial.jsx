@@ -8,9 +8,9 @@ import { HiStar } from 'react-icons/hi';
 
 const Testimonial = () => {
   return (
-    <div>
+    <div className='mt-[30px] lg:mt-[55px]'>
         <swiper>
-            
+
         </swiper>
     </div>
   )
