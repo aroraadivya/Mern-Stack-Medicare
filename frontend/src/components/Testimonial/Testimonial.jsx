@@ -33,7 +33,7 @@ const Testimonial = () => {
                                 Muhbur Rahman
                             </h4>
                         </div>
-                      </div>
+                    </div>
                   </div>
               </SwiperSlide>
         </Swiper>    
