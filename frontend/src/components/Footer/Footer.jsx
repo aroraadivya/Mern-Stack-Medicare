@@ -62,7 +62,10 @@ const quickLinks02 = [
 ];
 
 const quasiLinks03 = [
-    
+    {
+        path: '/',
+        display: 'Donate',
+    },
 ];
 const Footer = () => {
     return (
