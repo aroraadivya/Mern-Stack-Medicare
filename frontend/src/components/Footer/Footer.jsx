@@ -32,6 +32,10 @@ const quickLinks01 = [
         path: '/',
         display: 'About Us',
     },
+    {
+        path: '/services',
+        display: 'Services',
+    },
 ];
 const Footer = () => {
     return (
