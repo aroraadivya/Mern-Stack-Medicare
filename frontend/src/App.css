@@ -24,7 +24,7 @@ body{
 }
 
 .swiper{
-  
+  padding-bottom: 70px !important;
 }
 
 .sticky__header{
