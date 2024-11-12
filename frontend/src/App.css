@@ -12,6 +12,7 @@ body{
 
 .swiper-pagination-bullet{
   width: 12px !important;
+  height: 12px !important;
 }
 
 .sticky__header{
