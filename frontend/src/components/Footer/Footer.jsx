@@ -6,7 +6,11 @@ import { AiFillYoutube, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
 
 const socialLinks = [
     {
-        path: 'https://www.youtube.com/watch'
+        path: 'https://www.youtube.com/watch',
+        icon: <AiFillYoutube className='group-hover:text-white w-4 h-5'/>
+    },
+    {
+
     },
 ];
 const Footer = () => {
