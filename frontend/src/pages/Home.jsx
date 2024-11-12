@@ -251,6 +251,9 @@ const Home = () => {
             {/* faq section ends */}
 
             {/* testimonials section starts */}
+            <section>
+                
+            </section>
             {/* testimonial section ends */}
         </>
 
