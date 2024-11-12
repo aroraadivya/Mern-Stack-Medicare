@@ -30,6 +30,7 @@ const quickLinks01 = [
     },
     {
         path: '/',
+        display: 'About Us',
     },
 ];
 const Footer = () => {
