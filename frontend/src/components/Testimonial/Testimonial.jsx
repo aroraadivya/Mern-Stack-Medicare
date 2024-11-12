@@ -36,7 +36,7 @@ const Testimonial = () => {
                                 <HiStar className='text-yellowColor w-[18px] h-5' />
                                 <HiStar className='text-yellowColor w-[18px] h-5' />
                                 <HiStar className='text-yellowColor w-[18px] h-5' />
-                                  <HiStar className='text-yellowColor w-[18px] h-5' />
+                                <HiStar className='text-yellowColor w-[18px] h-5' />
                                   <HiStar className='text-yellowColor w-[18px] h-5' />
                             </div>
                         </div>
