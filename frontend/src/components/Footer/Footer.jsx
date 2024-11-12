@@ -17,6 +17,10 @@ const socialLinks = [
         path: 'https://www.instagram.com/',
         icon: <AiOutlineInstagram className='group-hover:text-white w-4 h-5' />,
     },
+    {
+        path: 'https://www.linkedin.com/',
+        icon: <RiLinkedinFill className='group-hover:text-white w-4 h-5' />
+    },
 ];
 const Footer = () => {
     return (
