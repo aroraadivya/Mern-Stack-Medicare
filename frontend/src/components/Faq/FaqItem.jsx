@@ -9,6 +9,8 @@ const FaqItem = ({item}) => {
         <h4 className='text-[16px] leading-7 lg:text-[22px] lg:leading-8 text-headingColor'>
             {item.question}
         </h4>
+
+        <div className='w-7 h-7 lg:w-8 lg:h-8 border border-solid border-[#141F21]'
     </div>
   </div>
   );
