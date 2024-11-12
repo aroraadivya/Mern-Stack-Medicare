@@ -34,7 +34,7 @@ const Testimonial = () => {
                             </h4>
                             <div className='flex items-center gap-[2px]'>
                                 <HiStar className='text-yellowColor w-[18px] h-5'/>
-                                
+                                  <HiStar className='text-yellowColor w-[18px] h-5' />   
                             </div>
                         </div>
                     </div>
