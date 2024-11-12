@@ -40,7 +40,9 @@ const Testimonial = () => {
                                 <HiStar className='text-yellowColor w-[18px] h-5' />
                             </div>
                         </div>
-                    </div>
+                    </div>\
+
+                    
                 </div>
             </SwiperSlide>
         </Swiper>    
