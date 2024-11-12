@@ -17,6 +17,7 @@ import DoctorList from '../components/Doctors/DoctorList';
 import faqImg from '../assets/images/faq-img.png';
 import FaqList from '../components/Faq/FaqList';
 import FaqItem from '../components/Faq/FaqItem';
+import Testimonial from '../components/Testimonial/Testimonial';
 
 const Home = () => {
     return <>
@@ -257,6 +258,8 @@ const Home = () => {
                         <h2 className='heading text-center'>What our patient Say</h2>
                         <p className='text__para text-center'>World-class care for everyone. Our health system offers unmatched, expert health care.</p>
                     </div>
+
+                    <Testimonial />
                 </div>
             </section>
             {/* testimonial section ends */}
