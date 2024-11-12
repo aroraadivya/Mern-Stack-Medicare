@@ -41,6 +41,8 @@ const quickLinks01 = [
         display: 'Blog',
     },
 ];
+
+
 const Footer = () => {
     return (
         <div>Footer</div>
