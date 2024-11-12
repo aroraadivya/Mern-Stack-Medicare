@@ -87,6 +87,8 @@ const Footer = () => {
                         {link.icon}</Link>))}
                     </div>
                 </div>
+
+                
             </div>
         </div>
     </footer>
