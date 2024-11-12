@@ -83,7 +83,8 @@ const Footer = () => {
                     <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Copyright {year} developed by Divya Arora.</p>
 
                     <div className='flex items-center gap-3 mt-4'>
-                        {socialLinks.map((link, index)=> <Link to={link.path} key={index}></Link>)}
+                        {socialLinks.map((link, index)=> (<Link to={link.path} key={index}>
+                        {link.icon}</Link>))}
                     </div>
                 </div>
             </div>
