@@ -252,7 +252,7 @@ const Home = () => {
 
             {/* testimonials section starts */}
             <section>
-                
+                <div className="container"></div>
             </section>
             {/* testimonial section ends */}
         </>
