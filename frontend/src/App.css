@@ -20,6 +20,7 @@ body{
 
 .swiper-pagination-bullet-active{
   background: #0067ff !important;
+  border: none !important;
 }
 
 .sticky__header{
