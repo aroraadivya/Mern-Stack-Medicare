@@ -80,7 +80,7 @@ const Footer = () => {
             <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
                 <div>
                     <img src={logo} alt='' />
-                    <p>Copyright {year} developed by Divya Arora.</p>
+                    <p className='text-[16px] leading-7 font-[400] text-textColor'>Copyright {year} developed by Divya Arora.</p>
                 </div>
             </div>
         </div>
