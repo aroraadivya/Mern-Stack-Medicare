@@ -77,7 +77,9 @@ const Footer = () => {
 
     return <footer>
         <div className='container'>
-            
+            <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
+                
+            </div>
         </div>
     </footer>
 };
