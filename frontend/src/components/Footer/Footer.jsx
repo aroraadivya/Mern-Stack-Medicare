@@ -11,6 +11,7 @@ const socialLinks = [
     },
     {
         path: 'https://github.com/',
+        icon: <AiFillGithub className='group-hover:text-white w-4 h-5' />,
     },
 ];
 const Footer = () => {
