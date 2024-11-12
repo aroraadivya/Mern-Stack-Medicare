@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h2>Quick Links</h2>
+                    <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>Quick Links</h2>
                 </div>
             </div>
         </div>
