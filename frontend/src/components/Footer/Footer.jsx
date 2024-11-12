@@ -92,8 +92,8 @@ const Footer = () => {
                     <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>Quick Links</h2>
 
                     <ul>
-                        {quickLinks01.map((item,index)=> <li key={index} className='mb-4'> <Link>
-                        
+                        {quickLinks01.map((item,index)=> <li key={index} className='mb-4'> <Link to={item.path}>
+                        {item}
                         </Link></li>)}
                     </ul>
                 </div>
