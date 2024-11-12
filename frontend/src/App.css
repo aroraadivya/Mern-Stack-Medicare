@@ -37,6 +37,10 @@ body{
   color: #fff !important;
 }
 
+.swiper-pagination{
+  
+}
+
 .sticky__header{
   width:100px;
   height:80px;
