@@ -24,9 +24,7 @@ const Testimonial = () => {
                 spaceBetween: 30,
               },
         }}>
-        </Swiper>
-
-        
+        </Swiper>    
     </div>
   )
 }
