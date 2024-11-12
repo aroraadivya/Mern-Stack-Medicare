@@ -34,7 +34,7 @@ const Testimonial = () => {
                             </h4>
                         </div>
                     </div>
-                  </div>
+                </div>
               </SwiperSlide>
         </Swiper>    
     </div>
