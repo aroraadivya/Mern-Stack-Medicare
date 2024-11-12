@@ -34,7 +34,7 @@ body{
 }
 
 .swiper-slide.swiper-slide-next h4, .swiper-slide.swiper-slide-next{
-  
+  color: #fff !important;
 }
 
 .sticky__header{
