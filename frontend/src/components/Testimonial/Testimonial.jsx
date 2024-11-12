@@ -9,7 +9,9 @@ import { HiStar } from 'react-icons/hi';
 const Testimonial = () => {
   return (
     <div>
-      
+        <swiper>
+            
+        </swiper>
     </div>
   )
 }
