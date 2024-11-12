@@ -32,6 +32,9 @@ const Testimonial = () => {
                             <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>
                                 Muhbur Rahman
                             </h4>
+                            <div className='flex items-center gap-[2px]'>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
