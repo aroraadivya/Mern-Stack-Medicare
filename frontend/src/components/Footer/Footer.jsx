@@ -55,6 +55,10 @@ const quickLinks02 = [
         path: '/',
         display: 'Find a Location',
     },
+    {
+        path: '/',
+        display: 'Get a Opinion',
+    },
 ];
 const Footer = () => {
     return (
