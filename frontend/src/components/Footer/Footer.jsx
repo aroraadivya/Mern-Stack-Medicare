@@ -47,6 +47,10 @@ const quickLinks02 = [
         path: 'find-a-doctor',
         display: 'Find a Doctor',
     },
+    {
+        path: '/',
+        display: 'Request an Appointment',
+    },
 ];
 const Footer = () => {
     return (
