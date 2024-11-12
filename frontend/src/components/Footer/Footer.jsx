@@ -10,7 +10,7 @@ const socialLinks = [
         icon: <AiFillYoutube className='group-hover:text-white w-4 h-5'/>
     },
     {
-
+        path: 'https://github.com/'
     },
 ];
 const Footer = () => {
