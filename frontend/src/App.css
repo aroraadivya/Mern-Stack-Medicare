@@ -14,6 +14,7 @@ body{
   width: 12px !important;
   height: 12px !important;
   border: 1px solid #181a1e !important;
+  opacity: 100% !important;
 }
 
 .sticky__header{
