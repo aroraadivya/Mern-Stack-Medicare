@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    
+                    <h2>Quick Links</h2>
                 </div>
             </div>
         </div>
