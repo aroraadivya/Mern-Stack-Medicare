@@ -74,10 +74,8 @@ const quickLinks03 = [
 const Footer = () => {
 
     const year = new Date().getFullYear();
-    
-    return (
-        <div>Footer</div>
-    );
-}   
+
+    return
+};
 
 export default Footer;
