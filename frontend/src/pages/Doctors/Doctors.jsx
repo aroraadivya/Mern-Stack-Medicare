@@ -1,4 +1,5 @@
 import React from 'react';
+import DoctorCard from './../../components/Doctors/DoctorCard';
 
 const Doctors = () => {
     return (
