@@ -4,7 +4,11 @@ import { doctors } from './../../assets/data/doctors';
 
 const Doctors = () => {
     return (
-        
+        <>
+          <section>
+            
+          </section>
+        </>
     );
 };
 
