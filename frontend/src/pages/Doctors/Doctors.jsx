@@ -18,7 +18,9 @@ const Doctors = () => {
             </section>
 
             <section>
-                
+                <div>
+                    
+                </div>
             </section>
         </>
     );
