@@ -16,6 +16,10 @@ const Doctors = () => {
                         </div>
                     </div>
             </section>
+
+            <section>
+                
+            </section>
         </>
     );
 };
