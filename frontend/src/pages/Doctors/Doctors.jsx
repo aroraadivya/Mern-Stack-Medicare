@@ -5,7 +5,7 @@ import { doctors } from './../../assets/data/doctors';
 const Doctors = () => {
     return (
         <>
-            <section>
+            <section className='bg-[#fff9ea]'>
                     <div className='container text-center'>
                         <h2 className='heading'>Find a Doctor</h2>
 
