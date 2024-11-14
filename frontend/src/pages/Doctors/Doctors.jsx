@@ -18,8 +18,8 @@ const Doctors = () => {
             </section>
 
             <section>
-                <div>
-                    
+                <div className='container'>
+
                 </div>
             </section>
         </>
