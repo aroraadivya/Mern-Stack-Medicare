@@ -11,6 +11,10 @@ const DoctorsDetails = () => {
                         <figure className="max-w-[200px] max-h-[200px]">
                             <img src={doctorImg} alt="" className="w-full" />
                         </figure>
+
+                        <div>
+                            
+                        </div>
                     </div>
                 </div>
 
