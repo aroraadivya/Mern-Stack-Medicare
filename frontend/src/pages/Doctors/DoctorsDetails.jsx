@@ -13,7 +13,7 @@ const DoctorsDetails = () => {
                         </figure>
 
                         <div>
-                            
+                            <span>Surgeon</span>
                         </div>
                     </div>
                 </div>
