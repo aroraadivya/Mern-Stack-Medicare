@@ -14,7 +14,7 @@ const DoctorsDetails = () => {
                             </figure>
 
                             <div>
-                                <span className="bg-[#CCF0F3] text-irisBlueColor py-1 px-6 lg:py-2 lg:px-6 text-[12px]">Surgeon</span>
+                                <span className="bg-[#CCF0F3] text-irisBlueColor py-1 px-6 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text-[16px] lg:leading-7 font-semibold rounded">Surgeon</span>
                             </div>
                         </div>
                     </div>
