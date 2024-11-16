@@ -1,7 +1,9 @@
 import React from "react";
 
 const DoctorsDetails = () => {
-    return
+    return (
+        
+    );
 };
 
 export default DoctorsDetails;
