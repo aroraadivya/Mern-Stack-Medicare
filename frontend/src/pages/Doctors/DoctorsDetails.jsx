@@ -30,7 +30,7 @@ const DoctorsDetails = () => {
                             </div>
                         </div>
 
-                        <div>
+                        <div className="mt-[50px] border-b border-solid border-[#0066ff34">
                             
                         </div>
                     </div>
