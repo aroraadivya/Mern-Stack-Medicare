@@ -23,7 +23,7 @@ const DoctorsDetails = () => {
                                         <img src={starIcon} alt="" /> 4.8
                                     </span>
 
-                                    <span>(272)</span>
+                                    <span className="text-[14px] leading-5 lg:text-[16px] lg:leading-7 font-semibold text-textColor">(272)</span>
                                 </div>
                             </div>
                         </div>
