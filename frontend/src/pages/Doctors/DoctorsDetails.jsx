@@ -8,7 +8,7 @@ const DoctorsDetails = () => {
                 <div className="md:col-span-2">
                     <div className="flex items-center gap-5">
                         <figure>
-                            
+                            <img src="" alt="" />
                         </figure>
                     </div>
                 </div>
