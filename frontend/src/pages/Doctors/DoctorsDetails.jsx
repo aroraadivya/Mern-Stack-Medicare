@@ -2,8 +2,8 @@ import React from "react";
 
 const DoctorsDetails = () => {
     return <section>
-        <div>
-            
+        <div className="max-w-[1170] px-5 mx-auto">
+
         </div>
     </section>
 };
