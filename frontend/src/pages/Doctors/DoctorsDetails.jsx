@@ -30,7 +30,9 @@ const DoctorsDetails = () => {
                             </div>
                         </div>
 
-                        <div></div>
+                        <div>
+                            
+                        </div>
                     </div>
 
                     <div>
