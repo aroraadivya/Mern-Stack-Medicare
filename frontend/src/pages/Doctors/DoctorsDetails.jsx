@@ -6,9 +6,13 @@ const DoctorsDetails = () => {
             <div className="grid md:grid-cols-3 gap-[50px]">
 
                 <div>
-                    
+
                 </div>
 
+                <div>
+
+                </div>
+                
             </div>
         </div>
     </section>
