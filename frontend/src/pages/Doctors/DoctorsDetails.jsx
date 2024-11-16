@@ -26,7 +26,7 @@ const DoctorsDetails = () => {
                                     <span className="text-[14px] leading-5 lg:text-[16px] lg:leading-7 font-[400] text-textColor">(272)</span>
                                 </div>
 
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non maxime, ex ea, deserunt, ducimus obcaecati earum excepturi officiis perspiciatis labore hic doloremque ratione eaque aspernatur nam eius magni ipsa architecto?</p>
+                                <p className="text__para text-[14px] leading-5 md:text-[15px] lg:max-w-[390px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non maxime, ex ea, deserunt, ducimus obcaecati earum excepturi officiis perspiciatis labore hic doloremque ratione eaque aspernatur nam eius magni ipsa architecto?</p>
                             </div>
                         </div>
                     </div>
