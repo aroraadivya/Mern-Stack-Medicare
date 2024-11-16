@@ -18,7 +18,9 @@ const DoctorsDetails = () => {
                                 <h3 className="text-headingColor text-[22px] leading-9 mt-3 font-bold">Muhibur Rahman</h3>
 
                                 <div className="flex items-center gap-[6px]">
-
+                                    <span>
+                                        
+                                    </span>
                                 </div>
                             </div>
                         </div>
