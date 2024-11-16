@@ -22,6 +22,8 @@ const DoctorsDetails = () => {
                                     <span className="flex items-center gap-[6px] text-[14px] leading-5 lg:text-[16px] lg:leading-7 font-semibold text-headingColor">
                                         <img src={starIcon} alt="" /> 4.8
                                     </span>
+
+                                    <span>(272)</span>
                                 </div>
                             </div>
                         </div>
