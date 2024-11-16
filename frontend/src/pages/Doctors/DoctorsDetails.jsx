@@ -29,6 +29,8 @@ const DoctorsDetails = () => {
                                 <p className="text__para text-[14px] leading-6 md:text-[15px] lg:max-w-[390px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                             </div>
                         </div>
+
+                        <div></div>
                     </div>
 
                     <div>
