@@ -38,7 +38,7 @@ const DoctorsDetails = () => {
                                 About
                             </button>
 
-                            <button className={`py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
+                            <button onClick={() => setTab('about')}  className={`py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
                                 Feedback
                             </button>
                         </div>
