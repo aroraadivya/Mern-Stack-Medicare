@@ -3,6 +3,9 @@ import doctorImg from '../../assets/images/doctor-img02.png';
 import starIcon from '../../assets/images/Star.png';
 
 const DoctorsDetails = () => {
+
+    const [tab,setTab] = useState('about')
+    
     return (
         <section>
             <div className="max-w-[1170px] px-5 mx-auto">
