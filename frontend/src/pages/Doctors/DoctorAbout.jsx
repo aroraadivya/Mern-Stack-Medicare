@@ -9,7 +9,7 @@ const DoctorAbout = () => {
                 <span className='text-irisBlueColor font-bold text-[24px] leading-9'>Muhbir Rahman</span>
             </h3>
 
-            <p className="text__para"></p>
+            <p className="text__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eveniet, cumque expedita soluta deleniti quis atque, ducimus esse, tempora consequuntur corrupti repellendus alias eum voluptatum? Repudiandae iusto blanditiis id consequatur!</p>
         </div>
     </div>
   );
