@@ -18,7 +18,7 @@ const DoctorAbout = () => {
             <ul className='pt-4 md:p-5'>
                 <li className='flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]'>
                     <div>
-                        <span></span>
+                        <span>23 June, 2008</span>
                     </div>
                 </li>
             </ul>
