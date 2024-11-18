@@ -2,7 +2,7 @@ import React from 'react'
 
 const Feedback = () => {
   return (
-  )
-}
+  );
+};
 
-export default Feedback
+export default Feedback;
