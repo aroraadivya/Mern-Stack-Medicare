@@ -43,6 +43,10 @@ const DoctorsDetails = () => {
                                 Feedback
                             </button>
                         </div>
+
+                        <div className="mt-[50px]">
+
+                        </div>
                     </div>
 
                     <div>
