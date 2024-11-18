@@ -20,7 +20,7 @@ const DoctorAbout = () => {
                     <div>
                         <span className='text-irisBlueColor text-[15px] leading-6 font-semibold'>23 June, 2008</span>
 
-                        <p>PHD in Surgeon</p>
+                        <p className='text-[16px] leading-6 font-medium text-textColor'>PHD in Surgeon</p>
                     </div>
                 </li>
             </ul>
