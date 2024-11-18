@@ -12,8 +12,8 @@ const DoctorAbout = () => {
             <p className="text__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eveniet, cumque expedita soluta deleniti quis atque, ducimus esse, tempora consequuntur corrupti repellendus alias eum voluptatum? Repudiandae iusto blanditiis id consequatur!</p>
         </div>
 
-        <div>
-            
+        <div className='mt-12'>
+
         </div>
     </div>
   );
