@@ -16,8 +16,8 @@ const DoctorAbout = () => {
             <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold'>Education</h3>
 
             <ul className='pt-4 md:p-5'>
-                <li>
-                    
+                <li className='flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]'>
+
                 </li>
             </ul>
         </div>
