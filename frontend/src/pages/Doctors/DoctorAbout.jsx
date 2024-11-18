@@ -19,7 +19,7 @@ const DoctorAbout = () => {
             <ul className='pt-4 md:p-5'>
                 <li className='flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]'>
                     <div>
-                          <span className='text-irisBlueColor text-[15px] leading-6 font-semibold'>{formateDate("09-13-2014")}</span>
+                          <span className='text-irisBlueColor text-[15px] leading-6 font-semibold'>{formateDate("09-13-2014")} - {formateDate("07-04-2010")}</span>
 
                         <p className='text-[16px] leading-6 font-medium text-textColor'>PHD in Surgeon</p>
                     </div>
