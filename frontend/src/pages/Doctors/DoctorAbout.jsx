@@ -8,6 +8,8 @@ const DoctorAbout = () => {
                 About of
                 <span className='text-irisBlueColor font-bold text-[24px] leading-9'>Muhbir Rahman</span>
             </h3>
+
+            <p className="text__para"></p>
         </div>
     </div>
   );
