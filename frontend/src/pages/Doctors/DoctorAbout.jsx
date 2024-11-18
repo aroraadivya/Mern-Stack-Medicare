@@ -22,7 +22,7 @@ const DoctorAbout = () => {
 
                         <p className='text-[16px] leading-6 font-medium text-textColor'>PHD in Surgeon</p>
                     </div>
-                      <p className='text-[16px] leading-6 font-medium text-textColor'>PHD in Surgeon</p>
+                      <p className='text-[16px] leading-5 font-medium text-textColor'>PHD in Surgeon</p>
                 </li>
             </ul>
         </div>
