@@ -48,7 +48,7 @@ const DoctorsDetails = () => {
 
                         <div className="mt-[50px]">
                             {
-                                tab==='about' && <DoctorAbout />
+                                tab==='about' && <DoctorAbout/>
                             }
                             {
                                 tab === 'feedback' && <Feedback/>
