@@ -2,6 +2,7 @@ import React from "react";
 import doctorImg from '../../assets/images/doctor-img02.png';
 import starIcon from '../../assets/images/Star.png';
 import { useState } from "react";
+import DoctorAbout from "./DoctorAbout";
 
 const DoctorsDetails = () => {
 
@@ -45,7 +46,9 @@ const DoctorsDetails = () => {
                         </div>
 
                         <div className="mt-[50px]">
-
+                            {
+                                tab==='about' && <DoctorAbout />
+                            }
                         </div>
                     </div>
 
