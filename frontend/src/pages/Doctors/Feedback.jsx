@@ -1,11 +1,7 @@
 import React from 'react'
 
 const Feedback = () => {
-  return (
-    <div>
-        
-    </div>
-  );
+  return
 };
 
 export default Feedback;
