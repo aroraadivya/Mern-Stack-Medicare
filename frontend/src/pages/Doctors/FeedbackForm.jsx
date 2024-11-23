@@ -6,6 +6,7 @@ const FeedbackForm = () => {
 
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
+    const [reviewText, setreviewText] = useState('');
 
     return (
     <form action=''>
