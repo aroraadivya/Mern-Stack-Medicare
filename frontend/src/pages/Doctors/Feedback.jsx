@@ -28,7 +28,7 @@ const Feedback = () => {
           </div>
 
           <div>
-            
+            {[...Array(5).keys()].map((_,index)=> <AiFillStar key={index} color='#0067FF'/>)}
           </div>
         </div>
       </div>
