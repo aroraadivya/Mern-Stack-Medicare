@@ -38,9 +38,7 @@ const Feedback = () => {
         </div>
       </div>
 
-      <div className='text-center'>
-        <button className='btn'>Give Feedback</button>
-      </div>
+      
     </div>
   );
 };
