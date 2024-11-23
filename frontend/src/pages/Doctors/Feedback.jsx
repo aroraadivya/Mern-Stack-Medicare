@@ -1,4 +1,5 @@
 import React from 'react';
+import {avatar} from '../../assets/images/avatar-icon.png';
 
 const Feedback = () => {
   return (
