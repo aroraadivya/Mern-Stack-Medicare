@@ -45,6 +45,10 @@ const FeedbackForm = () => {
             <h3 className='text-headingColor text-[16px] leading-6 font-semibold mb-4 mt-0'>
                 Share your feedback suggestion.
             </h3>
+
+            <textarea>
+                
+            </textarea>
         </div>
     </form>
     );
