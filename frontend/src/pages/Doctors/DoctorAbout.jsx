@@ -47,6 +47,8 @@ const DoctorAbout = () => {
                     </span>
 
                       <p className='text-[16px] leading-6 font-medium text-textColor'>Sr. Surgeon</p>
+
+                      <p className='text-[16px] leading-5 font-medium text-textColor'>New Apollo Hospital, New York.</p>
                 </li>
               </ul>
         </div>
