@@ -23,7 +23,7 @@ const FeedbackForm = () => {
                         key={index} 
                         type='button' 
                         className={`${
-                        index<=(rating && hover) || hover ? "text-yellowColor" : "text-grat-400"} bg-transparent border-none outline-none text-[22px] cursor-pointer`}
+                        index<=((rating && hover) || hover) ? "text-yellowColor" : "text-grat-400"} bg-transparent border-none outline-none text-[22px] cursor-pointer`}
                         onClick={()=>setRating(index)}
                         onMouseEnter={() => setHover(index)}
                         onMouseLeave={() => setHover(rating)}
