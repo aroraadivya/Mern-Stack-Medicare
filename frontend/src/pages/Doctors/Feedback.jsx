@@ -33,6 +33,10 @@ const Feedback = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        
+      </div>
     </div>
   );
 };
