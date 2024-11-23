@@ -15,6 +15,8 @@ const Feedback = () => {
 
             <div>
               <h5 className='text-[16px] leading-6 text-primaryColor font-bold'>Ali ahmed</h5>
+
+              <p className='text-[14px] leading-6 text-textColor'></p>
             </div>
           </div>
         </div>
