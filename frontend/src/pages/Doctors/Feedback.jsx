@@ -34,8 +34,8 @@ const Feedback = () => {
         </div>
       </div>
 
-      <div>
-        
+      <div className='text-center'>
+
       </div>
     </div>
   );
