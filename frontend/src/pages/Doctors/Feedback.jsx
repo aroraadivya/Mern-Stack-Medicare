@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar from '../../assets/images/avatar-icon.png';
+import { formateDate } from '../../utils/formateDate';
 
 const Feedback = () => {
   return (
