@@ -24,7 +24,7 @@ const FeedbackForm = () => {
                                 <AiFillStar />
                             </span>
                         </button>
-                    )
+                    );
                 })}
             </div>
         </div>
