@@ -24,7 +24,8 @@ const FeedbackForm = () => {
                         type='button' 
                         className={`${
                         index<=(rating && hover) || hover ? "text-yellowColor" : "text-grat-400"} bg-transparent border-none outline-none text-[22px] cursor-pointer`}
-                        onClick={()=>setRating(index)}>
+                        onClick={()=>setRating(index)}
+                        onMouseEnter={() => setHover(index)}>
                             <span>
                                 <AiFillStar />
                             </span>
