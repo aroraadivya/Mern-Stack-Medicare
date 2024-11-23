@@ -27,6 +27,10 @@ const FeedbackForm = () => {
                         onClick={()=>setRating(index)}
                         onMouseEnter={() => setHover(index)}
                         onMouseLeave={() => setHover(rating)}
+                        onDoubleClick={() => {
+                            setHover(0);
+                            setRating(0);
+                        }}
                         >
                             <span>
                                 <AiFillStar />
