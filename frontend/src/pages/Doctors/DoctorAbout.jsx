@@ -41,8 +41,8 @@ const DoctorAbout = () => {
               <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold'>Experience</h3>
 
               <ul className='grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5'>
-                <li>
-                    
+                <li className='p-4 rounded bg-[#fff9ea]'>
+
                 </li>
               </ul>
         </div>
