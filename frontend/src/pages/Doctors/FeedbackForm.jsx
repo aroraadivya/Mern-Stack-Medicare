@@ -9,7 +9,9 @@ const FeedbackForm = () => {
             </h3>
 
             <div>
-                
+                {[...Array(5).keys()].map((_, index)=> {
+                    index += 1;
+                })}
             </div>
         </div>
     </form>
