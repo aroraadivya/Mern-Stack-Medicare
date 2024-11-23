@@ -20,6 +20,10 @@ const Feedback = () => {
               <p className='text-[14px] leading-6 text-textColor'>
                 {formateDate('09-13-2014')}
               </p>
+
+              <p>
+                Good services, highly recommended.
+              </p>
             </div>
           </div>
         </div>
