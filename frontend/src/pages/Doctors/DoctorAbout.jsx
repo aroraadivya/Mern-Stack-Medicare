@@ -38,7 +38,7 @@ const DoctorAbout = () => {
         </div>
 
         <div className='mt-12'>
-
+              <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold'>Education</h3>
         </div>
     </div>
   );
