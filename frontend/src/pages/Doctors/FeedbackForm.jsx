@@ -3,8 +3,9 @@ import { AiFillStar } from 'react-icons/ai';
 
 const FeedbackForm = () => {
 
-    const [rating,setRating] = useState(0);
-  return (
+    const [rating, setRating] = useState(0);
+    
+    return (
     <form action=''>
         <div>
             <h3 className='text-headingColor text-[16px] leading-6 font-semibold mb-4'>
