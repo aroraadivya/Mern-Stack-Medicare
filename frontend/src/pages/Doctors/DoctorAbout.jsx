@@ -43,7 +43,7 @@ const DoctorAbout = () => {
               <ul className='grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5'>
                 <li className='p-4 rounded bg-[#fff9ea]'>
                     <span className='text-yellowColor text-[15px] leading-6 font-semibold'>
-                          {formateDate("09-13-2014")} - {formateDate("09-13-2016")}
+                          {formateDate("07-04-2010")} - {formateDate("08-13-2014")}
                     </span>
                 </li>
               </ul>
