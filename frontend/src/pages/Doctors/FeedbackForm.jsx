@@ -18,7 +18,7 @@ const FeedbackForm = () => {
                     index += 1;
 
                     return(
-                        <button key={index} type='button'>
+                        <button key={index} type='button' onClick={()=>setRating(index)}>
                             <span>
                                 <AiFillStar />
                             </span>
