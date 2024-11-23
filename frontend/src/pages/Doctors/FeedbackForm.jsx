@@ -42,7 +42,7 @@ const FeedbackForm = () => {
         </div>
 
         <div className='mt-[30px]'>
-            <h3>
+            <h3 className='text-headingColor text-[16px] leading-6 font-semibold mb-4 mt-0'>
                 Share your feedback suggestion.
             </h3>
         </div>
