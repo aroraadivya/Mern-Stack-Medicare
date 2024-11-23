@@ -26,6 +26,10 @@ const Feedback = () => {
               </p>
             </div>
           </div>
+
+          <div>
+            
+          </div>
         </div>
       </div>
     </div>
