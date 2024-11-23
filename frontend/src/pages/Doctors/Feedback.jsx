@@ -12,6 +12,10 @@ const Feedback = () => {
             <figure className='w-10 h-10 rounded-full'>
               <img className='w-full' src={avatar} alt=''/>
             </figure>
+
+            <div>
+              
+            </div>
           </div>
         </div>
       </div>
