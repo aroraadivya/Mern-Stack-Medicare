@@ -40,8 +40,8 @@ const DoctorAbout = () => {
         <div className='mt-12'>
               <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold'>Experience</h3>
 
-              <ul>
-                
+              <ul className='grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5'>
+
               </ul>
         </div>
     </div>
