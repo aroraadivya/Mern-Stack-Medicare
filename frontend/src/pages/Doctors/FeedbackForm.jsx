@@ -56,7 +56,7 @@ const FeedbackForm = () => {
         </div>
 
         <button>
-            
+            Submit Feedback
         </button>
     </form>
     );
