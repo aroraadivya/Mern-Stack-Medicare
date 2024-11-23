@@ -39,6 +39,10 @@ const DoctorAbout = () => {
 
         <div className='mt-12'>
               <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold'>Experience</h3>
+
+              <ul>
+                
+              </ul>
         </div>
     </div>
   );
