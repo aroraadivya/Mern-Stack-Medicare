@@ -42,7 +42,7 @@ const DoctorAbout = () => {
 
               <ul className='grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5'>
                 <li className='p-4 rounded bg-[#fff9ea]'>
-
+                    <span></span>
                 </li>
               </ul>
         </div>
