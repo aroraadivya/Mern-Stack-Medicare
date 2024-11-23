@@ -11,6 +11,14 @@ const FeedbackForm = () => {
             <div>
                 {[...Array(5).keys()].map((_, index)=> {
                     index += 1;
+
+                    return(
+                        <button key={index} type='button'>
+                            <span>
+                                <AiFillStar />
+                            </span>
+                        </button>
+                    )
                 })}
             </div>
         </div>
