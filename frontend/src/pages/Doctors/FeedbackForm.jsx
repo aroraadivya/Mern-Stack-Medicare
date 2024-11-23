@@ -8,6 +8,12 @@ const FeedbackForm = () => {
     const [hover, setHover] = useState(0);
     const [reviewText, setreviewText] = useState('');
 
+    const handleSubmitReview = async e => {
+        e.preventDefault();
+
+        //later
+    };
+
     return (
     <form action=''>
         <div>
