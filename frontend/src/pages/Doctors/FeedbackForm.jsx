@@ -7,7 +7,7 @@ const FeedbackForm = () => {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
 
-    return 
+    return (
     <form action=''>
         <div>
             <h3 className='text-headingColor text-[16px] leading-6 font-semibold mb-4'>
@@ -29,6 +29,7 @@ const FeedbackForm = () => {
             </div>
         </div>
     </form>
+    );
 };
 
 export default FeedbackForm;
