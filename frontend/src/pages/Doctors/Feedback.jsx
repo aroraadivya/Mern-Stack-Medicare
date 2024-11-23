@@ -35,7 +35,7 @@ const Feedback = () => {
       </div>
 
       <div className='text-center'>
-        <button>Give Feedback</button>
+        <button className='btn'>Give Feedback</button>
       </div>
     </div>
   );
