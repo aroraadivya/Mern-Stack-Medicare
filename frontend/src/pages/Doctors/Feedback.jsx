@@ -8,8 +8,8 @@ const Feedback = () => {
 
         <div className='flex justify-between gap-10 mb-[30px]'>
           <div className='flex gap-3'>
-            <figure>
-              
+            <figure className='w-10 h-10 rounded-full'>
+
             </figure>
           </div>
         </div>
