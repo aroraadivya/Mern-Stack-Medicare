@@ -41,8 +41,8 @@ const FeedbackForm = () => {
             </div>
         </div>
 
-        <div>
-            
+        <div className='mt-[30px]'>
+
         </div>
     </form>
     );
