@@ -4,7 +4,8 @@ import { AiFillStar } from 'react-icons/ai';
 const FeedbackForm = () => {
 
     const [rating, setRating] = useState(0);
-    
+    const [hover, setHover] = useState(0);
+
     return (
     <form action=''>
         <div>
