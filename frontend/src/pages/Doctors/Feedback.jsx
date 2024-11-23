@@ -2,8 +2,8 @@ import React from 'react'
 
 const Feedback = () => {
   return (
-    <div>
-      
+    <div className='mb-[50px]'>
+
     </div>
   );
 };
