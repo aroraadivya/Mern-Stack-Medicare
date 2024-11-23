@@ -55,7 +55,7 @@ const FeedbackForm = () => {
             </textarea>
         </div>
 
-        <button>
+        <button type='' className='btn'>
             Submit Feedback
         </button>
     </form>
