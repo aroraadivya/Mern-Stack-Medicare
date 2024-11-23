@@ -37,8 +37,8 @@ const DoctorAbout = () => {
             </ul>
         </div>
 
-        <div>
-            
+        <div className='mt-12'>
+
         </div>
     </div>
   );
