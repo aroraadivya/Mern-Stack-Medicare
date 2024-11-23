@@ -48,6 +48,7 @@ const FeedbackForm = () => {
 
             <textarea className='border border-solid border-[#0066ff34] focus:outline outline-primaryColor w-full px-4 py-3 rounded-md'
             rows="5"
+            placeholder='Write your message'
             >
             </textarea>
         </div>
