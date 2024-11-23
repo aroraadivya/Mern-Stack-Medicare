@@ -14,7 +14,7 @@ const Feedback = () => {
             </figure>
 
             <div>
-              <h5>Ali ahmed</h5>
+              <h5 className='text-[16px] leading-6 text-primaryColor font-bold'>Ali ahmed</h5>
             </div>
           </div>
         </div>
