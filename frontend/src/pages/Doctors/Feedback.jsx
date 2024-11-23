@@ -14,7 +14,7 @@ const Feedback = () => {
             </figure>
 
             <div>
-              
+              <h5>Ali ahmed</h5>
             </div>
           </div>
         </div>
