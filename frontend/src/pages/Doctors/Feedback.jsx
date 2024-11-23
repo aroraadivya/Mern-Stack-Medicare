@@ -1,7 +1,9 @@
 import React from 'react'
 
 const Feedback = () => {
-  return
+  return (
+
+  );
 };
 
 export default Feedback;
