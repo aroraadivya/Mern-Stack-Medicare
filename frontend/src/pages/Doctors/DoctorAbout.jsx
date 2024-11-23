@@ -46,7 +46,7 @@ const DoctorAbout = () => {
                           {formateDate("07-04-2010")} - {formateDate("08-13-2014")}
                     </span>
 
-                      <p className='text-[16px] leading-6 font-medium text-textColor'>PHD in Surgeon</p>
+                      <p className='text-[16px] leading-6 font-medium text-textColor'>Sr. Surgeon</p>
                 </li>
               </ul>
         </div>
