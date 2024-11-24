@@ -1,5 +1,6 @@
 import React from 'react';
 import signupImg from '../assets/images/signup.gif';
+import avatar from '../assets/images/doctor-img01.png';
 
 const Signup = () => {
     return (
