@@ -61,7 +61,7 @@ const FeedbackForm = () => {
             </textarea>
         </div>
 
-        <button type='submit' className='btn'>
+        <button type='submit' onClick={handleSubmitReview} className='btn'>
             Submit Feedback
         </button>
     </form>
