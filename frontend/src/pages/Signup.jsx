@@ -95,9 +95,9 @@ const Signup = () => {
                             </div>
 
                             <p className='mt-5 text-textColor text-center'>
-                                Don't have an account?{" "}
-                                <Link to="/register" className='text-primaryColor font-medium ml-1'>
-                                    Register
+                                Already have an account?{" "}
+                                <Link to="/login" className='text-primaryColor font-medium ml-1'>
+                                    Login
                                 </Link>
                             </p>
                         </form>
