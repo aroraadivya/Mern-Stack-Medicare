@@ -13,7 +13,7 @@ const Login = () => {
             ...FormData,
             [e.target.name]: e.target.value
         })
-    }
+    };
 
     return (
         <section className='px-5 lg:px-0'>
