@@ -70,7 +70,7 @@ const Signup = () => {
 
                             <div className='mb-5 flex items-center gap-3'>
                                 <figure className='w-[60px] h-[60px] rounded-full border-2 border-solid border-primaryColor flex items-center justify-center'>
-                                    <img src={avatar} alt='' />
+                                    <img src={avatar} alt='' className='w-full rounded-full '/>
                                 </figure>
                             </div>
                         </form>
