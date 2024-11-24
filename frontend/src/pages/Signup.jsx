@@ -14,9 +14,9 @@ const Signup = () => {
                     </div>
 
                     {/* Sign Up form */}
-                    <div>
+                    <div className='rounded-l-lg lg:pl-16 py-10'>
                         <h3>
-                            
+
                         </h3>
                     </div>
                 </div>
