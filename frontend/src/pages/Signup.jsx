@@ -12,6 +12,8 @@ const Signup = () => {
                             <img src={signupImg} alt='' className='w-full rounded-l-lg'/>
                         </figure>
                     </div>
+
+                    {/* Sign Up form */}
                 </div>
             </div>
         </section>
