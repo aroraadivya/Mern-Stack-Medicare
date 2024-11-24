@@ -10,9 +10,9 @@ const Login = () => {
                     </span> Back
                 </h3>
 
-                <form>
+                <form className='py-4 md:py-0'>
                     <div>
-                        
+
                     </div>
                 </form>
             </div>
