@@ -36,7 +36,7 @@ const SidePanel = () => {
 
                   <li className='flex items-center justify-between mb-2'>
                       <p className='text-[15px] leading-6 text-textColor font-semibold'>
-                          Tuesday
+                          Wednesday
                       </p>
                       <p className='text-[15px] leading-6 text-textColor font-semibold'>
                           4:00 PM - 9:30 PM
