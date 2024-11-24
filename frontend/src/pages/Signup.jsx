@@ -9,7 +9,7 @@ const Signup = () => {
                     {/* image box */}
                     <div className='hidden lg:block bg-primaryColor rounded-l-lg'>
                         <figure className='rounded-l-lg'>
-                            <img src={signupImg} alt=''/>
+                            <img src={signupImg} alt='' className='w-full rounded-l-lg'/>
                         </figure>
                     </div>
                 </div>
