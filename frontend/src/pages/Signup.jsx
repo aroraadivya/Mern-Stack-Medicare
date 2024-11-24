@@ -80,8 +80,8 @@ const Signup = () => {
                                      id='customFile'
                                      accept='.jpg, .png' />
 
-                                     <label>
-                                        
+                                     <label htmlFor='customFile'>
+
                                      </label>
                                 </div>
                             </div>
