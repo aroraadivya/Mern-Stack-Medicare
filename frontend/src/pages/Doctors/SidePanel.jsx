@@ -44,6 +44,10 @@ const SidePanel = () => {
                     </li>
                 </ul>
             </div>
+
+            <button>
+                Book Appointment
+            </button>
         </div>
     );
 };
