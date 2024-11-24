@@ -73,7 +73,7 @@ const Signup = () => {
                                     <img src={avatar} alt='' className='w-full rounded-full '/>
                                 </figure>
 
-                                <div>
+                                <div className='relative w-[130px] h-[50px]'>
                                     <input
                                      type='file'
                                      name='photo'
