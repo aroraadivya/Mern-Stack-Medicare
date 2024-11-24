@@ -4,6 +4,7 @@ import starIcon from '../../assets/images/Star.png';
 import { useState } from "react";
 import DoctorAbout from "./DoctorAbout";
 import Feedback from "./Feedback";
+import SidePanel from "./SidePanel";
 
 const DoctorsDetails = () => {
 
@@ -57,7 +58,7 @@ const DoctorsDetails = () => {
                     </div>
 
                     <div>
-
+                       <SidePanel /> 
                     </div>
 
                 </div>
