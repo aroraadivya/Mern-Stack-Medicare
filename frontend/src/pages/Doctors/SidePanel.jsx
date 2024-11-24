@@ -21,7 +21,7 @@ const SidePanel = () => {
                         Sunday
                     </p>
                       <p className='text-[15px] leading-6 text-textColor font-semibold'>
-                          Sunday
+                          4:00 PM - 6:00 PM
                       </p>
                 </li>
             </ul>
