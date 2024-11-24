@@ -33,7 +33,7 @@ const Login = () => {
                         name='email'
                         value={FormData.email}
                         onChange={handleInputChange} 
-                        className='w-full px-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
+                        className='w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
 
                         <div className='mb-5'>
                             <input
@@ -42,7 +42,7 @@ const Login = () => {
                                 name='password'
                                 value={FormData.password}
                                 onChange={handleInputChange}
-                                className='w-full px-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
+                                className='w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
                         </div>
 
                         <div className='mt-7'>
