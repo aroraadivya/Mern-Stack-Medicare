@@ -45,7 +45,7 @@ const Login = () => {
                         </div>
 
                         <div className='mt-7'>
-                            <button>
+                            <button type='submit' className='w-full bg-primaryColor text-white text-[18px] leading-[30px]'>
                                 Login
                             </button>
                         </div>
