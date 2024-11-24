@@ -10,8 +10,8 @@ const SidePanel = () => {
             </span>
         </div>
 
-        <div>
-            
+        <div className='mt-[30px]'>
+
         </div>
     </div>
   );
