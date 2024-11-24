@@ -14,6 +14,9 @@ const Signup = () => {
                     </div>
 
                     {/* Sign Up form */}
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
