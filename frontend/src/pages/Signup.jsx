@@ -74,7 +74,11 @@ const Signup = () => {
                                 </figure>
 
                                 <div>
-                                    
+                                    <input
+                                     type='file'
+                                     name='photo'
+                                     id='customFile'
+                                     accept='.jpg, .png' />
                                 </div>
                             </div>
                         </form>
