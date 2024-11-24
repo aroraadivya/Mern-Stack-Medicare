@@ -68,7 +68,9 @@ const Signup = () => {
                             </div>
 
                             <div className='mb-5 flex items-center gap-3'>
-
+                                <figure>
+                                    
+                                </figure>
                             </div>
                         </form>
                     </div>
