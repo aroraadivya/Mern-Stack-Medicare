@@ -8,7 +8,7 @@ const Signup = () => {
                     {/* image box */}
                     <div className='hidden lg:block bg-primaryColor rounded-l-lg'>
                         <figure className='rounded-l-lg'>
-
+                            <img src={signupImg} alt=''/>
                         </figure>
                     </div>
                 </div>
