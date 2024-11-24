@@ -51,7 +51,7 @@ const Login = () => {
                         </div>
 
                         <p className='mt-5 text-textColor text-center'>
-                            
+                            Don't have an account?
                         </p>
                     </div>
                 </form>
