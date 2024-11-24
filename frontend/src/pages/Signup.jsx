@@ -7,8 +7,8 @@ const Signup = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
                     {/* image box */}
                     <div className='hidden lg:block bg-primaryColor rounded-l-lg'>
-                        <figure>
-                            
+                        <figure className='rounded-l-lg'>
+
                         </figure>
                     </div>
                 </div>
