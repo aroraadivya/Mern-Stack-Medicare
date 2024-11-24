@@ -20,6 +20,9 @@ const SidePanel = () => {
                     <p className='text-[15px] leading-6 text-textColor font-semibold'>
                         Sunday
                     </p>
+                      <p className='text-[15px] leading-6 text-textColor font-semibold'>
+                          Sunday
+                      </p>
                 </li>
             </ul>
         </div>
