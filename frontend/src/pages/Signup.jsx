@@ -18,6 +18,10 @@ const Signup = () => {
                         <h3 className='text-headingColor text-[22px] leading-9 font-bold mb-10'>
                             Create an <span className='text-primaryColor'>Account</span>
                         </h3>
+
+                        <form>
+                            
+                        </form>
                     </div>
                 </div>
             </div>
