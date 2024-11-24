@@ -9,6 +9,10 @@ const SidePanel = () => {
                 500 BDT
             </span>
         </div>
+
+        <div>
+            
+        </div>
     </div>
   );
 };
