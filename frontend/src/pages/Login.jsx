@@ -2,6 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 
 const Login = () => {
+
+    const [FormData, setFormData] = useState({
+        email: '',
+        password: ''
+    })
+
     return (
         <section className='px-5 lg:px-0'>
             <div className='w-full max-w-[570px] mx-auto rounded-lg shadow-md md:p-10'>
