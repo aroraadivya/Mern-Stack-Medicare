@@ -11,7 +11,9 @@ const SidePanel = () => {
         </div>
 
         <div className='mt-[30px]'>
-
+            <p>
+                Available Time Slots
+            </p>
         </div>
     </div>
   );
