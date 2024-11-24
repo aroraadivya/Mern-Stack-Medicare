@@ -52,6 +52,7 @@ const Signup = () => {
                                     Are you a:
                                     <select name='role' className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value="patient">Patient</option>
+                                        <option value="doctor">Doctor</option>
                                     </select>
                                 </label>
                             </div>
