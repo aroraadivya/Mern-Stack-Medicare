@@ -48,7 +48,9 @@ const Signup = () => {
                             </div>
 
                             <div className='mb-5 flex items-center justify-between'>
-
+                                <label>
+                                    
+                                </label>
                             </div>
                         </form>
                     </div>
