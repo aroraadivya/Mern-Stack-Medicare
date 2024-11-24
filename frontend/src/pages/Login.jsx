@@ -49,6 +49,10 @@ const Login = () => {
                                 Login
                             </button>
                         </div>
+
+                        <p className='mt-5 text-textColor text-center'>
+                            
+                        </p>
                     </div>
                 </form>
             </div>
