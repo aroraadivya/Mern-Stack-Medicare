@@ -3,8 +3,8 @@ import React from 'react'
 const SidePanel = () => {
   return (
     <div className='shadow-panelShadow p-3 lg:p-5 rounded-md'>
-        <div>
-            
+        <div className='flex items-center justify-between'>
+
         </div>
     </div>
   );
