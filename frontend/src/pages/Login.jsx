@@ -46,7 +46,7 @@ const Login = () => {
 
                         <div className='mt-7'>
                             <button>
-                                
+                                Login
                             </button>
                         </div>
                     </div>
