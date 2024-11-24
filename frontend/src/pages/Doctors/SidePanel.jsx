@@ -5,7 +5,7 @@ const SidePanel = () => {
     <div>
       
     </div>
-  )
-}
+  );
+};
 
 export default SidePanel
