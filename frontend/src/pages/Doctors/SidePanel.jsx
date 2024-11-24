@@ -14,6 +14,10 @@ const SidePanel = () => {
             <p className='text__para mt-0 font-semibold text-headingColor'>
                 Available Time Slots
             </p>
+
+            <ul>
+                
+            </ul>
         </div>
     </div>
   );
