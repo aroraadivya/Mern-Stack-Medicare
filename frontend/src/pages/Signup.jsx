@@ -1,7 +1,7 @@
 import React from 'react';
 import signupImg from '../assets/images/signup.gif';
 import avatar from '../assets/images/doctor-img01.png';
-import Login from './Login';
+import { Link } from'react-router-dom';
 
 const Signup = () => {
     return (
