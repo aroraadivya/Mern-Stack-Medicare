@@ -12,7 +12,7 @@ const Login = () => {
 
                 <form className='py-4 md:py-0'>
                     <div className='mb-5'>
-
+                        <input type='email' placeholder='Enter your email address' name='email' value={FormData.email} onChange={handleInputChange} />
                     </div>
                 </form>
             </div>
