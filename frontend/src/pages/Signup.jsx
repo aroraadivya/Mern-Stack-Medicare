@@ -2,8 +2,8 @@ import React from 'react';
 
 const Signup = () => {
     return (
-        <section>
-            
+        <section className='px-5 xl:px-0'>
+
         </section>
     );
 };
