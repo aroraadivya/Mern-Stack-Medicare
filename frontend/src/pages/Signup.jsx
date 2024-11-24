@@ -49,7 +49,7 @@ const Signup = () => {
 
                             <div className='mb-5 flex items-center justify-between'>
                                 <label htmlFor='' className='text-headingColor font-bold text-[16px] leading-7' >
-
+                                    Are you a:
                                 </label>
                             </div>
                         </form>
