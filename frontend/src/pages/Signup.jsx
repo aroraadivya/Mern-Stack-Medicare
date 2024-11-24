@@ -81,7 +81,8 @@ const Signup = () => {
                                      accept='.jpg, .png'
                                      className='absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer '/>
 
-                                     <label htmlFor='customFile'>
+                                     <label htmlFor='customFile' className='absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer
+                                     ' >
 
                                      </label>
                                 </div>
