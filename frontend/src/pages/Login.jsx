@@ -26,7 +26,13 @@ const Login = () => {
 
                 <form className='py-4 md:py-0'>
                     <div className='mb-5'>
-                        <input type='email' placeholder='Enter your email address' name='email' value={FormData.email} onChange={handleInputChange} />
+                        <input 
+                        type='email'
+                        placeholder='Enter your email address'
+                        name='email'
+                        value={FormData.email}
+                        onChange={handleInputChange} 
+                        className='w-full px-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor rounded-md' />
                     </div>
                 </form>
             </div>
