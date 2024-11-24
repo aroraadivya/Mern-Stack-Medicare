@@ -1,4 +1,5 @@
 import React from 'react';
+import signupImg from '../assets/images/signup-img.png';
 
 const Signup = () => {
     return (
