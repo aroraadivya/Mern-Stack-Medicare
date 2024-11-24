@@ -60,7 +60,8 @@ const Signup = () => {
                                     Are you a:
                                     <select name='Gender' className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value="Male">Male</option>
-                                        <option value="Femaler">Female</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Transgender">Transgender</option>
                                     </select>
                                 </label>
                             </div>
