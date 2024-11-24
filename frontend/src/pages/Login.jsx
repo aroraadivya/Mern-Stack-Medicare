@@ -44,8 +44,8 @@ const Login = () => {
                                 className='w-full px-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
                         </div>
 
-                        <div>
-                            
+                        <div className='mt-7'>
+
                         </div>
                     </div>
                 </form>
