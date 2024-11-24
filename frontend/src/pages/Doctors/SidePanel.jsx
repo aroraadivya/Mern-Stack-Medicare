@@ -16,7 +16,9 @@ const SidePanel = () => {
             </p>
 
             <ul className='mt-3'>
-
+                <li>
+                    
+                </li>
             </ul>
         </div>
     </div>
