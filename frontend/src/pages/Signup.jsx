@@ -48,8 +48,8 @@ const Signup = () => {
                             </div>
 
                             <div className='mb-5 flex items-center justify-between'>
-                                <label>
-                                    
+                                <label htmlFor='' className='text-headingColor font-bold text-[16px] leading-7' >
+
                                 </label>
                             </div>
                         </form>
