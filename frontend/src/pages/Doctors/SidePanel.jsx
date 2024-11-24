@@ -17,7 +17,9 @@ const SidePanel = () => {
 
             <ul className='mt-3'>
                 <li className='flex items-center justify-between mb-2'>
-
+                    <p>
+                        Sunday
+                    </p>
                 </li>
             </ul>
         </div>
