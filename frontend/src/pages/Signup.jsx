@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const Signup = () => {
 
+    const [selectedFile, setSelectedFile] = useState(null);
     const [FormData, setFormData] = useState({
         name:'',
         email: '',
