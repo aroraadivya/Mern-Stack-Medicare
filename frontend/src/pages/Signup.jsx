@@ -11,7 +11,8 @@ const Signup = () => {
         email: '',
         password: '',
         photo: '',
-        gender:''
+        gender:'',
+        role:'patient'
     })
 
     const handleInputChange = (e) => {
