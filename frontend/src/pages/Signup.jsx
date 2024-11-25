@@ -48,6 +48,7 @@ const Signup = () => {
                                     placeholder='Full Name'
                                     name='name'
                                     value={formData.name}
+                                    onChange={handleInputChange}
                                     className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
                             </div>
 
