@@ -8,7 +8,8 @@ const Signup = () => {
 
     const [FormData, setFormData] = useState({
         email: '',
-        password: ''
+        password: '',
+        photo: ''
     })
 
     const handleInputChange = (e) => {
