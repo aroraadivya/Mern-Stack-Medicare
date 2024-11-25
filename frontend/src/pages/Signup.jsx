@@ -50,7 +50,7 @@ const Signup = () => {
                             Create an <span className='text-primaryColor'>Account</span>
                         </h3>
 
-                        <form>
+                        <form onSubmit={submitHandler}>
                             <div className='mb-5'>
                                 <input
                                     type='text'
