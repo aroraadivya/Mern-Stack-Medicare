@@ -7,7 +7,7 @@ import { useState } from 'react';
 const Signup = () => {
 
     const [selectedFile, setSelectedFile] = useState(null);
-    const [previewURL, setPreviewURL] = useState(null);
+    const [previewURL, setPreviewURL] = useState("");
     const [FormData, setFormData] = useState({
         name:'',
         email: '',
