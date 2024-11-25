@@ -4,6 +4,19 @@ import avatar from '../assets/images/doctor-img01.png';
 import { Link } from'react-router-dom';
 
 const Signup = () => {
+
+    const [FormData, setFormData] = useState({
+        email: '',
+        password: ''
+    })
+
+    const handleInputChange = (e) => {
+        setFormData({
+            ...FormData,
+            [e.target.name]: e.target.value
+        })
+    };
+    
     return (
         <section className='px-5 xl:px-0'>
             <div className='max-w-[1170px] mx-auto'>
