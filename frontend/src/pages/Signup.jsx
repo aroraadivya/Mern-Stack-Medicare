@@ -87,7 +87,7 @@ const Signup = () => {
                                 <label className='text-headingColor font-bold text-[16px] leading-7' >
                                     Are you a:
                                     <select name='Gender'
-                                    value={formData.name}
+                                    value={formData.gender}
                                     onChange={handleInputChange}
                                     className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value="">Select</option>
