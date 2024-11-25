@@ -2,6 +2,7 @@ import React from 'react';
 import signupImg from '../assets/images/signup.gif';
 import avatar from '../assets/images/doctor-img01.png';
 import { Link } from'react-router-dom';
+import { useState } from 'react';
 
 const Signup = () => {
 
@@ -16,7 +17,7 @@ const Signup = () => {
             [e.target.name]: e.target.value
         })
     };
-    
+
     return (
         <section className='px-5 xl:px-0'>
             <div className='max-w-[1170px] mx-auto'>
