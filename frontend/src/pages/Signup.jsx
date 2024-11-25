@@ -7,9 +7,11 @@ import { useState } from 'react';
 const Signup = () => {
 
     const [FormData, setFormData] = useState({
+        name:'',
         email: '',
         password: '',
-        photo: ''
+        photo: '',
+        gender:''
     })
 
     const handleInputChange = (e) => {
