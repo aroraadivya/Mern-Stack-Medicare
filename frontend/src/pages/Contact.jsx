@@ -20,6 +20,19 @@ const Contact = () => {
                             className='form__input mt-1'
                         />
                     </div>
+
+                    <div>
+                        <label htmlFor='email' className='form__label'>
+                            Your Email
+                        </label>
+                        <input
+                            type='email'
+                            id='email'
+                            name='email'
+                            placeholder='example@gmail.com'
+                            className='form__input mt-1'
+                        />
+                    </div>
                 </form>
             </div>
         </section>
