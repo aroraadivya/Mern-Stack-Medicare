@@ -28,7 +28,6 @@ const Signup = () => {
         const file = event.target.files[0];
 
         // later will use cloudinary to upload image
-        console.log(file);
     };
 
     const submitHandler = async event => {
