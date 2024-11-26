@@ -45,6 +45,8 @@ const Contact = () => {
                             className='form__input mt-1'
                         />
                     </div>
+
+                    <button type='submit' className='btn rounded sm:w-fit'>Submit</button>
                 </form>
             </div>
         </section>
