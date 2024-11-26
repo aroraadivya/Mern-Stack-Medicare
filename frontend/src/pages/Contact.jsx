@@ -22,14 +22,13 @@ const Contact = () => {
                     </div>
 
                     <div>
-                        <label htmlFor='email' className='form__label'>
-                            Your Email
+                        <label htmlFor='subject' className='form__label'>
+                            Subject
                         </label>
                         <input
-                            type='email'
-                            id='email'
-                            name='email'
-                            placeholder='example@gmail.com'
+                            type='text'
+                            id='subject'
+                            placeholder='Let us know how we can help you.'
                             className='form__input mt-1'
                         />
                     </div>
