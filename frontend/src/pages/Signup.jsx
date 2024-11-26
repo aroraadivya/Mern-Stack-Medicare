@@ -56,7 +56,7 @@ const Signup = () => {
                                     type='text'
                                     placeholder='Full Name'
                                     name='name'
-                                    value={formData.name}
+                                    value={FormData.name}
                                     onChange={handleInputChange}
                                     className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
                             </div>
@@ -66,7 +66,7 @@ const Signup = () => {
                                     type='email'
                                     placeholder='Enter your email address'
                                     name='email'
-                                    value={formData.email}
+                                    value={FormData.email}
                                     onChange={handleInputChange}
                                     className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
                             </div>
@@ -76,7 +76,7 @@ const Signup = () => {
                                     type='password'
                                     placeholder='Password'
                                     name='password'
-                                    value={formData.password}
+                                    value={FormData.password}
                                     onChange={handleInputChange}
                                     className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
                             </div>
@@ -85,7 +85,7 @@ const Signup = () => {
                                 <label className='text-headingColor font-bold text-[16px] leading-7' >
                                     Are you a:
                                     <select name='role'
-                                    value={formData.role}
+                                    value={FormData.role}
                                     onChange={handleInputChange}
                                     className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value="patient">Patient</option>
@@ -96,7 +96,7 @@ const Signup = () => {
                                 <label className='text-headingColor font-bold text-[16px] leading-7' >
                                     Are you a:
                                     <select name='Gender'
-                                    value={formData.gender}
+                                    value={FormData.gender}
                                     onChange={handleInputChange}
                                     className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value="">Select</option>
