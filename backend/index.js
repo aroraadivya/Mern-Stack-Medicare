@@ -17,6 +17,11 @@ app.get('/',(req,res)=> {
     res.send('Api is working')
 });
 
+// middleware
+app.use(express.json());
+app.use(cookieParser());
+app.use(cors(crosOptions));
+
 app.listen(port, () => {
     console.log('Server is running on port ' + port);
 });
