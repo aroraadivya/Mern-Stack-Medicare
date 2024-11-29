@@ -4,6 +4,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import authRoute from './Routes/auth.js';
+import crypto from 'crypto';
 
 dotenv.config();
 
