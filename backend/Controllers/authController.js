@@ -5,11 +5,15 @@ import bcrypt from 'bcryptjs';
 import dotenv from 'dotenv';
 import auth from '../Middleware/auth.js';
 
-const generateToken = user => {
-    return jwt.sign({id:user._id, role:user.role}, process.env.JWT_SECRET_KEY, {
-        expiresIn: '15d'
-    });
-}
+const generateToken = (user) => {
+  return jwt.sign(
+    { id: user._id, role: user.role },
+    process.env.JWT_SECRET_KEY,
+    {
+      expiresIn: "15d",
+    }
+  );
+};
 
 export const register = async (req, res)=> {
     
@@ -65,42 +69,44 @@ export const register = async (req, res)=> {
     }
 };
 
-export const login = async (req, res)=> {
+export const login = async (req, res) => {
+  const { email, password } = req.body;
 
-    const {email} = req.body
-    try{
-        let user = null;
+  try {
+    // Step 1: Find user in both collections
+    const patient = await User.findOne({ email });
+    const doctor = await Doctor.findOne({ email });
 
-        const patient = await User.findOne({email})
-        const doctor = await Doctor.findOne({email})
+    const user = patient || doctor;
 
-        if(patient){
-            user = patient;
-        }
-        if(doctor){
-            user = doctor;
-        }
-
-        // check if user exist or not
-        if(!user){
-            return res.status(404).json({message: 'User not found'});
-        }
-
-        // comapre password
-        const isPasswordMatch = await bcrypt.compare(req.body.password, user.password);
-
-        if(!isPasswordMatch){
-            return res.status(400).json({status:false, message:'Invalid credentials'});
-        }
-
-        // get token
-        const token = generateToken(user);
-
-        const {password, role, appointments, ...rest} = user._doc;
-
-        res.status(200).json({status:true, message:'Successfully login', token, data:{...rest}, role });
-
-    } catch (err){
-        res.status(500).json({status:false, message:'Failed to login'});
+    // Step 2: If user doesn't exist
+    if (!user) {
+      return res.status(404).json({ status: false, message: "User not found" });
     }
+
+    // Step 3: Validate password
+    const isPasswordMatch = await bcrypt.compare(password, user.password);
+    if (!isPasswordMatch) {
+      return res
+        .status(400)
+        .json({ status: false, message: "Invalid credentials" });
+    }
+
+    // Step 4: Generate JWT token
+    const token = generateToken(user);
+
+    // Step 5: Prepare response
+    const { password: pwd, ...userData } = user._doc;
+
+    res.status(200).json({
+      status: true,
+      message: "Login successful",
+      token,
+      data: userData,
+      role: user.role,
+    });
+  } catch (err) {
+    console.error("Login error:", err.message);
+    res.status(500).json({ status: false, message: "Internal server error" });
+  }
 };
