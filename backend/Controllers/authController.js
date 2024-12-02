@@ -2,6 +2,8 @@ import User from '../Models/UserSchema.js';
 import Doctor from '../Models/DoctorSchema.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
+import dotenv from 'dotenv';
+import auth from '../Middleware/auth.js';
 
 const generateToken = user => {
     return jwt.sign({id:user._id, role:user.role}, process.env.JWT_SECRET_KEY, {
