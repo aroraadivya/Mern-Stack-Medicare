@@ -36,9 +36,7 @@ export const getSingleUser = async (req, res) => {
 
   try {
     const user = await User.findById(
-      id,
-    );
-
+      id).select("-password");
     res
       .status(200)
       .json({
