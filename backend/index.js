@@ -4,8 +4,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import authRoute from './Routes/auth.js';
-import crypto from 'crypto';
-import jwt from 'jsonwebtoken';
+import userRoute from './Routes/user.js';
 
 dotenv.config();
 
@@ -40,6 +39,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors(crosOptions));
 app.use('/api/v1/auth', authRoute);
+app.use("/api/v1/users", userRoute);
+
 
 app.listen(port, () => {
     console.log('Server is running on port ' + port);
