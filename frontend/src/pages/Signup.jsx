@@ -28,6 +28,10 @@ const Signup = () => {
     const handleFileInputChange = async (event) => {
         const file = event.target.files[0];
 
+        const data = await uploadImageToCloudinary(file);
+
+        console.log(data);
+
         // later will use cloudinary to upload image
     };
 
