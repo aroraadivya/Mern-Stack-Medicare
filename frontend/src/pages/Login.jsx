@@ -1,19 +1,54 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../config';
+import { toast } from 'react-toastify';
+import { authContext } from '../context/authContext';
 
 const Login = () => {
-
     const [FormData, setFormData] = useState({
         email: '',
         password: ''
-    })
+    });
+
+    const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         setFormData({
             ...FormData,
             [e.target.name]: e.target.value
-        })
+        });
+    };
+
+    const submitHandler = async event => {
+
+        event.preventDefault();
+        setLoading(true);
+
+        try {
+            const res = await fetch(`${BASE_URL}/auth/login`, {
+                method: 'post',
+                Headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(FormData)
+            });
+
+            const result = await res.json();
+
+            if (!res.ok) {
+                throw new Error(result.message);
+            }
+
+            setLoading(false);
+            toast.success(result.message);
+            navigate('/home');
+
+        } catch (err) {
+            toast.error(err.message);
+            setLoading(false);
+        }
     };
 
     return (
@@ -25,7 +60,7 @@ const Login = () => {
                     </span> Back
                 </h3>
 
-                <form className='py-4 md:py-0'>
+                <form className='py-4 md:py-0' onSubmit={submitHandler}>
                     <div className='mb-5'>
                         <input
                             type='email'
@@ -36,28 +71,28 @@ const Login = () => {
                             className='w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
                     </div>
 
-                        <div className='mb-5'>
-                            <input
-                                type='password'
-                                placeholder='Password'
-                                name='password'
-                                value={FormData.password}
-                                onChange={handleInputChange}
-                                className='w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
-                        </div>
+                    <div className='mb-5'>
+                        <input
+                            type='password'
+                            placeholder='Password'
+                            name='password'
+                            value={FormData.password}
+                            onChange={handleInputChange}
+                            className='w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer' required />
+                    </div>
 
-                        <div className='mt-7'>
-                            <button type='submit' className='w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3'>
-                                Login
-                            </button>
-                        </div>
+                    <div className='mt-7'>
+                        <button type='submit' className='w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3'>
+                            Login
+                        </button>
+                    </div>
 
-                        <p className='mt-5 text-textColor text-center'>
-                            Don't have an account?{" "}
-                            <Link to="/register" className='text-primaryColor font-medium ml-1'>
-                                Register
-                            </Link>
-                        </p>
+                    <p className='mt-5 text-textColor text-center'>
+                        Don't have an account?{" "}
+                        <Link to="/register" className='text-primaryColor font-medium ml-1'>
+                            Register
+                        </Link>
+                    </p>
                 </form>
             </div >
         </section >
