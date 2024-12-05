@@ -201,9 +201,9 @@ import { toast } from 'react-toastify';
 import HashLoader from 'react-spinners/HashLoader';
 
 const Signup = () => {
-    const [selectedFile, setSelectedFile] = useState(null);
     const [previewURL, setPreviewURL] = useState('');
     const [loading, setLoading] = useState(false);
+    const [genderError, setGenderError] = useState(''); // Add state for gender error
 
     const [formData, setFormData] = useState({
         name: '',
@@ -229,19 +229,31 @@ const Signup = () => {
 
         try {
             const data = await uploadImageToCloudinary(file);
-            console.log('Uploaded Image URL:', data.url); // Debugging
-            setPreviewURL(data.url); // Set preview URL
-            setSelectedFile(data.url); // Set file URL
-            setFormData({ ...formData, photo: data.url }); // Update formData with the image URL
+            if (data?.url) {
+                setPreviewURL(data.url); // Update preview
+                setFormData({ ...formData, photo: data.url }); // Set photo in formData
+            } else {
+                throw new Error('Failed to retrieve image URL');
+            }
         } catch (error) {
-            toast.error('Failed to upload image');
             console.error('Image upload error:', error);
+            toast.error('Failed to upload image. Please try again.');
         }
     };
 
     const submitHandler = async (event) => {
         event.preventDefault();
         setLoading(true);
+        setGenderError(''); // Reset gender error before submission
+
+        // Validate form data
+        if (!formData.name || !formData.email || !formData.password || !formData.photo || !formData.gender) {
+            if (!formData.gender) {
+                setGenderError('Gender is required'); // Set error if gender is not selected
+            }
+            setLoading(false);
+            return;
+        }
 
         try {
             const res = await fetch(`${BASE_URL}/auth/register`, {
@@ -252,17 +264,18 @@ const Signup = () => {
                 body: JSON.stringify(formData),
             });
 
-            const { message } = await res.json();
+            const responseData = await res.json();
 
             if (!res.ok) {
-                throw new Error(message);
+                throw new Error(responseData.message || 'Something went wrong');
             }
 
-            setLoading(false);
-            toast.success(message);
+            toast.success(responseData.message || 'Registration successful!');
             navigate('/login');
         } catch (err) {
-            toast.error(err.message);
+            console.error('Signup Error:', err.message || err);
+            toast.error(err.message || 'Internal Server Error');
+        } finally {
             setLoading(false);
         }
     };
@@ -342,11 +355,12 @@ const Signup = () => {
                                         onChange={handleInputChange}
                                         className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value=''>Select</option>
-                                        <option value='Male'>Male</option>
-                                        <option value='Female'>Female</option>
-                                        <option value='Other'>Other</option>
+                                        <option value='male'>Male</option>
+                                        <option value='female'>Female</option>
+                                        <option value='other'>Other</option>
                                     </select>
                                 </label>
+                                {genderError && <p className="text-red-500 text-sm">{genderError}</p>} {/* Show error message */}
                             </div>
 
                             <div className='mb-5 flex items-center gap-3'>
