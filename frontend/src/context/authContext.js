@@ -40,7 +40,9 @@ const authreducer = (state, action) => {
 export const authContextProvider = ({Children})=> {
     const [state, dispatch] = useReducer(authReducer, initialState);
 
-    return <authContext.Provider value = {{user:state.user, token:state.token, role:state.role, dispatch}}>
+    return (
+    <authContext.Provider value = {{user:state.user, token:state.token, role:state.role, dispatch}}>
         {Children}
-        </authContext.Provider>
-}
+    </authContext.Provider>
+    );
+};
