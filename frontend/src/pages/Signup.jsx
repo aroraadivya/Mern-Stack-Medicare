@@ -1,21 +1,24 @@
 import React from 'react';
 import signupImg from '../assets/images/signup.gif';
 import avatar from '../assets/images/doctor-img01.png';
-import { Link } from'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import uploadImageToCloudinary from '../utils/uploadCloudinary';
+import { BASE_URL } from '../config';
 
 const Signup = () => {
 
     const [selectedFile, setSelectedFile] = useState(null);
     const [previewURL, setPreviewURL] = useState("");
+    const [loading, setLoading] = useState(false);
+
     const [FormData, setFormData] = useState({
-        name:'',
+        name: '',
         email: '',
         password: '',
         photo: '',
-        gender:'',
-        role:'patient'
+        gender: '',
+        role: 'patient'
     })
 
     const handleInputChange = (e) => {
@@ -30,15 +33,38 @@ const Signup = () => {
 
         const data = await uploadImageToCloudinary(file);
 
-        console.log(data);
+        setPreviewURL(data.url);
+        setSelectedFile(data.url);
+        setFormData({ ...FormData, photo: data.url });
 
         // later will use cloudinary to upload image
     };
 
     const submitHandler = async event => {
 
-        console.log(FormData);
         event.preventDefault();
+        setLoading(true);
+
+        try {
+            const res = await fetch(`${BASE_URL}/auth/register`, {
+                method: 'post',
+                Headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(FormData)
+            });
+
+            const {message} = await res.json();
+
+            if(!res.ok){
+                throw new Error(message);
+            }
+
+            setLoading(false);
+            
+        } catch (err) {
+
+        }
     };
 
     return (
@@ -93,9 +119,9 @@ const Signup = () => {
                                 <label className='text-headingColor font-bold text-[16px] leading-7' >
                                     Are you a:
                                     <select name='role'
-                                    value={FormData.role}
-                                    onChange={handleInputChange}
-                                    className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
+                                        value={FormData.role}
+                                        onChange={handleInputChange}
+                                        className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value="patient">Patient</option>
                                         <option value="doctor">Doctor</option>
                                     </select>
@@ -104,9 +130,9 @@ const Signup = () => {
                                 <label className='text-headingColor font-bold text-[16px] leading-7' >
                                     Are you a:
                                     <select name='Gender'
-                                    value={FormData.gender}
-                                    onChange={handleInputChange}
-                                    className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
+                                        value={FormData.gender}
+                                        onChange={handleInputChange}
+                                        className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
                                         <option value="">Select</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -117,22 +143,22 @@ const Signup = () => {
 
                             <div className='mb-5 flex items-center gap-3'>
                                 <figure className='w-[60px] h-[60px] rounded-full border-2 border-solid border-primaryColor flex items-center justify-center'>
-                                    <img src={avatar} alt='' className='w-full rounded-full '/>
+                                    <img src={avatar} alt='' className='w-full rounded-full ' />
                                 </figure>
 
                                 <div className='relative w-[130px] h-[50px]'>
                                     <input
-                                     type='file'
-                                     name='photo'
-                                     id='customFile'
-                                     onChange={handleFileInputChange}
-                                     accept='.jpg, .png'
-                                     className='absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer '/>
+                                        type='file'
+                                        name='photo'
+                                        id='customFile'
+                                        onChange={handleFileInputChange}
+                                        accept='.jpg, .png'
+                                        className='absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer ' />
 
-                                     <label htmlFor='customFile' className='absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer
+                                    <label htmlFor='customFile' className='absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer
                                      ' >
                                         Upload Photo
-                                     </label>
+                                    </label>
                                 </div>
                             </div>
 
