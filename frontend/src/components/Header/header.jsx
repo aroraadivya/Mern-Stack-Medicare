@@ -1,8 +1,9 @@
-import {useEffect, useRef} from 'react';
+import {useEffect, useRef, useContext} from 'react';
 import logo from '../../assets/images/logo.png';
 import userImg from '../../assets/images/avatar-icon.png'
 import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
+import { authContext } from '../../context/AuthContext';
 
 const navLinks = [
     {
@@ -27,6 +28,7 @@ const Header = () => {
 
     const headerRef = useRef(null);
     const menuRef = useRef(null);
+    const {user, role, token} = useContext(authContext);
 
     const handleSAtickyHeader = () => {
         window.addEventListener('scroll', () => {
@@ -79,6 +81,7 @@ const Header = () => {
                         </Link>
                     </div>
 
+                    <h1>{user?.name}</h1>
                     <Link to='/login'>
                         <button className='bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]'>Login</button>
                     </Link>
