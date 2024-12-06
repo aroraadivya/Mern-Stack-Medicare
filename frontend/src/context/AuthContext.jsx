@@ -1,35 +1,86 @@
-import { Children, createContext, useContext, useEffect, useReducer } from "react";
+// import { Children, createContext, useContext, useEffect, useReducer } from "react";
+
+// const initialState = {
+//     user:null,
+//     role:null,
+//     token:null,
+// };
+
+// export const authContext = createContext(initialState);
+
+// const authreducer = (state, action) => {
+
+//     switch (action.type) {
+//         case 'LOGIN_START':
+//             return {
+//                 user:null,
+//                 role:null,
+//                 token:null,
+//             };
+
+//         case 'LOGIN_SUCCESS':
+//             return {
+//                 user:action.payload.user,
+//                 role:action.payload.role,
+//                 token:action.payload.token,
+//             };
+
+//         case 'LOGOUT':
+//             return {
+//                 user:null,
+//                 role:null,
+//                 token:null,
+//             };
+
+//         default:
+//             return state;
+//     }
+// };
+
+// export const authContextProvider = ({Children})=> {
+//     const [state, dispatch] = useReducer(authReducer, initialState);
+
+//     return (
+//     <authContext.Provider value = {{user:state.user, token:state.token, role:state.role, dispatch}}>
+//         {Children}
+//     </authContext.Provider>
+//     );
+// };
+
+
+import { createContext, useReducer } from "react";
 
 const initialState = {
-    user:null,
-    role:null,
-    token:null,
+    user: null,
+    role: null,
+    token: null,
 };
 
+// Create the context
 export const authContext = createContext(initialState);
 
-const authreducer = (state, action) => {
-
+// Reducer function
+const authReducer = (state, action) => {
     switch (action.type) {
         case 'LOGIN_START':
             return {
-                user:null,
-                role:null,
-                token:null,
+                user: null,
+                role: null,
+                token: null,
             };
 
         case 'LOGIN_SUCCESS':
             return {
-                user:action.payload.user,
-                role:action.payload.role,
-                token:action.payload.token,
+                user: action.payload.user,
+                role: action.payload.role,
+                token: action.payload.token,
             };
 
         case 'LOGOUT':
             return {
-                user:null,
-                role:null,
-                token:null,
+                user: null,
+                role: null,
+                token: null,
             };
 
         default:
@@ -37,12 +88,20 @@ const authreducer = (state, action) => {
     }
 };
 
-export const authContextProvider = ({Children})=> {
+// Context Provider Component
+export const AuthContextProvider = ({ children }) => { // Changed `Children` to `children`
     const [state, dispatch] = useReducer(authReducer, initialState);
 
     return (
-    <authContext.Provider value = {{user:state.user, token:state.token, role:state.role, dispatch}}>
-        {Children}
-    </authContext.Provider>
+        <authContext.Provider
+            value={{
+                user: state.user,
+                token: state.token,
+                role: state.role,
+                dispatch,
+            }}
+        >
+            {children} {/* Corrected `Children` to `children` */}
+        </authContext.Provider>
     );
 };
