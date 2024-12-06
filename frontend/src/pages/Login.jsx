@@ -1,9 +1,9 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../config';
 import { toast } from 'react-toastify';
-import { authContext } from '../context/authContext';
+import { authContext } from '../context/AuthContext';
 
 const Login = () => {
     const [FormData, setFormData] = useState({
@@ -13,6 +13,7 @@ const Login = () => {
 
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
+    const {dispatch} = useContext(authContext);
 
     const handleInputChange = (e) => {
         setFormData({
@@ -40,6 +41,18 @@ const Login = () => {
             if (!res.ok) {
                 throw new Error(result.message);
             }
+
+
+            dispatch({
+                type: 'LOGIN_SUCCESS',
+                payload: {
+                    user: result.data,
+                    token: result.token,
+                    role: result.role,
+                },
+            });
+
+            console.log(result, "login data");
 
             setLoading(false);
             toast.success(result.message);
