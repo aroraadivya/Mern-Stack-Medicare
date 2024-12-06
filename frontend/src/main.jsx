@@ -24,6 +24,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { authContextProvider } from "./context/AuthContext.jsx";
 
 const rootElement = document.getElementById("root");
 
@@ -34,6 +35,7 @@ if (!rootElement) {
 createRoot(rootElement).render(
   <React.StrictMode>
     <BrowserRouter>
+    <authContextProvider>
       <ToastContainer
         theme="dark"
         position="top-right"
@@ -42,6 +44,7 @@ createRoot(rootElement).render(
         pauseOnHover={false}
       />
       <App />
+    </authContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
