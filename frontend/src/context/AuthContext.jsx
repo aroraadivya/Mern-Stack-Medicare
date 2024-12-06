@@ -48,10 +48,11 @@
 // };
 
 
-import { createContext, useReducer } from "react";
+
+import { createContext, useReducer, useEffect } from "react";
 
 const initialState = {
-    user: localStorage.getItem('user') /= undefined ? JSON.parse(localStorage.getItem('user')) : null,
+    user: localStorage.getItem('user') !== undefined ? JSON.parse(localStorage.getItem('user')) : null,
     role: localStorage.getItem('role') || null,
     token: localStorage.getItem('token') || null,
 };
@@ -89,11 +90,12 @@ const authReducer = (state, action) => {
 };
 
 // Context Provider Component
-export const AuthContextProvider = ({ children }) => { // Changed `Children` to `children`
+export const AuthContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(authReducer, initialState);
 
     useEffect(() => {
-        localScorage.setItem('user', JSON.stringify(state.user));
+        // Persist state changes to localStorage
+        localStorage.setItem('user', JSON.stringify(state.user));
         localStorage.setItem('token', state.token);
         localStorage.setItem('role', state.role);
     }, [state]);
@@ -107,7 +109,8 @@ export const AuthContextProvider = ({ children }) => { // Changed `Children` to 
                 dispatch,
             }}
         >
-            {children} {/* Corrected `Children` to `children` */}
+            {children}
         </authContext.Provider>
     );
 };
+
