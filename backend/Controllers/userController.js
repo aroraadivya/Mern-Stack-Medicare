@@ -63,3 +63,13 @@ export const getAllUser = async (req, res) => {
     res.status(404).json({ success: false, message: "Not found" });
   }
 };
+
+export const getUserProfile = async(req,res) => {
+  const userId = req.userId;
+
+  try {
+
+  } catch (err) {
+
+  }
+};
