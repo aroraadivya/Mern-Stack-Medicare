@@ -95,8 +95,12 @@ export const getMyAppointments = async(req, res) => {
     const doctorIds = bookings.map(el=>el.doctor.id);
 
     // step -3:retrieve doctors from doctor ids
-    const doctors = await Doctor.find();
-  } catch (err) {
+    const doctors = await Doctor.find({_id: {$in:doctorIds}}).select('-password');
 
+    res.status(200).json({success:true, message:'Appointments are getting', data:doctors});
+  } catch (err) {
+    res
+      .status(500)
+      .json({ success: false, message: "Something went wrong, cannot get" });
   }
 }
