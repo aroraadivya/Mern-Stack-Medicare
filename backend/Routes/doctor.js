@@ -4,6 +4,7 @@ import {
   deleteDoctor,
   getAllDoctor,
   getSingleDoctor,
+  getDoctorProfile,
 } from "../Controllers/doctorController.js";
 import { authenticate, restrict } from "../auth/verifyToken.js";
 import reviewRouter from "./review.js";
