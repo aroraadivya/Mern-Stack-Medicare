@@ -5,7 +5,6 @@ import Signup from '../pages/Signup.jsx';
 import Contact from "../pages/Contact.jsx";
 import Doctors from "../pages/Doctors/Doctors.jsx";
 import DoctorDetails from "../pages/Doctors/DoctorsDetails.jsx";
-
 import { Routes, Route } from 'react-router-dom';
 
 const Routers = () => {
