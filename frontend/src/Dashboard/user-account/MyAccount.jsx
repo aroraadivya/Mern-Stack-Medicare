@@ -10,7 +10,7 @@ const Myaccount = () => {
         <div className='pb-[50px] px-[30px] rounded-md'>
           <div className='flex items-center justify-center'>
             <figure className='w-[100px] h-[100px] rounded-full border-2 border-solid border-primaryColor'>
-              <img src={userImg} alt='' className='w-full h-full' />
+              <img src={userImg} alt='' className='w-full h-full rounded-full' />
             </figure>
           </div>
 

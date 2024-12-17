@@ -14,26 +14,25 @@
 // };
 
 // export default ProtectedRoute;
+ 
 
 import React from 'react';
-import { authContext } from '../context/AuthContext';
 import { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
+import { authContext } from '../context/AuthContext';
 
-const ProtectedRoute = ({ children, allowedRoles }) => {
+const ProtectedRoute = ({ children, allowedRoles = [] }) => {
   const { token, role } = useContext(authContext);
 
-  // Ensure token and role exist, and check if role is allowed
+  // Check if user is authenticated and their role is allowed
   if (!token) {
     return <Navigate to="/login" replace={true} />;
   }
 
-  if (!allowedRoles.includes(role)) {
-    // Redirect to a not authorized or home page if role isn't allowed
-    return <Navigate to="/" replace={true} />;
+  if (allowedRoles.length > 0 && !allowedRoles.includes(role)) {
+    return <Navigate to="/login" replace={true} />;
   }
 
-  // If token and role match, render the child component
   return children;
 };
 
