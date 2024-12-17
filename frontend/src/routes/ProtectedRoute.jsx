@@ -3,7 +3,7 @@ import { authContext } from '../context/AuthContext';
 import { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
 
-const ProctedRoute = ({children, allowedRoles}) => {
+const ProtectedRoute = ({children, allowedRoles}) => {
 
     const {token, role} = useContext(authContext);
 
@@ -13,4 +13,4 @@ const ProctedRoute = ({children, allowedRoles}) => {
   return accessibleRoute;
 };
 
-export default ProctedRoute;
+export default ProtectedRoute;
