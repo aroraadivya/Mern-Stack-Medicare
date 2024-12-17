@@ -6,6 +6,7 @@ import Contact from "../pages/Contact.jsx";
 import Doctors from "../pages/Doctors/Doctors.jsx";
 import DoctorDetails from "../pages/Doctors/DoctorsDetails.jsx";
 import { Routes, Route } from 'react-router-dom';
+import Myaccount from '../Dashboard/user-account/Myaccount.jsx';
 
 const Routers = () => {
     return <Routes>
@@ -17,6 +18,7 @@ const Routers = () => {
         <Route path="/register" element={<Signup />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/users/profile/me" element={<Myaccount />} />
     </Routes>
 }
 
