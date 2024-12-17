@@ -1,7 +1,15 @@
 import {useContext} from 'react';
+import { authContext } from '../../context/authContext';
 import userImg from '../../assets/images/doctor-img01.png';
 
 const Myaccount = () => {
+
+  const { dispatch } = useContext(authContext);
+
+  const handleLogout = ()=>{
+    dispatch({type: 'LOGOUT'});
+  };
+
   return (
     <div className='max-w-[1170] px-5 mx-auto'>
 
