@@ -8,7 +8,7 @@ import DoctorDetails from "../pages/Doctors/DoctorsDetails.jsx";
 import { Routes, Route } from 'react-router-dom';
 import Myaccount from '../Dashboard/user-account/Myaccount.jsx';
 import Dashboard from '../Dashboard/doctor-account/Dashboard.jsx';
-import ProctedRoute from './ProctedRoute.jsx';
+import ProctedRoute from './ProtectedRoute.jsx';
 
 const Routers = () => {
     return <Routes>
