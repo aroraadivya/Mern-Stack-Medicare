@@ -125,6 +125,7 @@ export const login = async (req, res) => {
       status: true,
       message: "Successfully logged in",
       token,
+      role: user.role,
       data: userData,
     });
   } catch (err) {
