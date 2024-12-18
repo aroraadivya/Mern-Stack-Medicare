@@ -1,6 +1,8 @@
 import { useContext, useState} from 'react';
 import { authContext } from '../../context/authContext';
 import userImg from '../../assets/images/doctor-img01.png';
+import MyBookings from './MyBookings';
+import Profile from './Profile';
 
 const Myaccount = () => {
 
