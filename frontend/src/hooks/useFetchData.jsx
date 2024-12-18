@@ -1,4 +1,5 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react';
+import { token } from '../config.js';
 
 const useFetchData = (url) => {
 
@@ -11,13 +12,19 @@ const useFetchData = (url) => {
             const res = await fetch(url, {
                 headers: {Authorization: `Bearer ${token}`}
             })
+
+            const result = await res.json();
+
+            if(!res.ok){
+                return toast.error(result.message);
+            }
         }
     },[]);
   
   
     return (
         <div>
-            
+
         </div>
   );
 };
