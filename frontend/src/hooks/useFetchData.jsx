@@ -1,11 +1,13 @@
-import React from 'react'
+import {useEffect, useState} from 'react'
 
-const useFetchData = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const useFetchData = (url) => {
+
+    const [data,setData] = useState([]);
+    const [loading,setLoading] = useState(false);
+  
+  
+    return (
+  );
+};
 
 export default useFetchData
