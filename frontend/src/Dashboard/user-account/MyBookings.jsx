@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const MyBookings = () => {
   return (
     <div>
-      My Bookings
+        MyBookings;
     </div>
-  );
-};
+  )
+}
 
-export default MyBookings;
+export default MyBookings
