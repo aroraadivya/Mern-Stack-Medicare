@@ -19,7 +19,7 @@ const useFetchData = (url) => {
                 const result = await res.json();
 
                 if (!res.ok) {
-                    throw new Error(result.message + 'failed');
+                    throw new Error(result.message + '!');
                 }
 
                 setData(result.data);
