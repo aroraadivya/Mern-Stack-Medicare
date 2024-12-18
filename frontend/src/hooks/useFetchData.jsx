@@ -41,4 +41,4 @@ const useFetchData = (url) => {
     }
 };
 
-export default useFetchData
+export default useFetchData;

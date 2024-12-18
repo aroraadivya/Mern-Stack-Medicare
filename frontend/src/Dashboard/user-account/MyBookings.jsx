@@ -19,15 +19,14 @@ const MyBookings = () => {
             {/* No Appointments */}
             {!loading && !error && (
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
-                    {appointments.map(doctor => (
+                    {appointments.map(doctor=> (
                         <DoctorCard doctor={doctor} key={doctor._id} />
                     ))}
                 </div>
             )}
 
-            {/* Data Loaded */}
             {!loading && !error && appointments.length === 0 && (
-                <h2 className='mt-5 text-center text-headingColor leading-7 text-[20px] font-semibold text-primaryColor'>You did not book any appointment yet!</h2>)}
+                <h2 className='mt-5 text-center leading-7 text-[20px] font-semibold text-primaryColor'>You did not book any appointment yet!</h2>)}
         </div>
     );
 };
