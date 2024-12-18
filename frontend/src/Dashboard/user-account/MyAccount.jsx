@@ -6,6 +6,7 @@ import Profile from './Profile';
 import useGetProfile from '../../hooks/useFetchData';
 import { BASE_URL } from '../../config';
 import Loading from '../../components/Loader/Loading.jsx';
+import Error from '../../components/Error/Error.jsx';
 
 const Myaccount = () => {
 
