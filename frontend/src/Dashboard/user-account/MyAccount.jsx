@@ -3,11 +3,15 @@ import { authContext } from '../../context/authContext';
 import userImg from '../../assets/images/doctor-img01.png';
 import MyBookings from './MyBookings';
 import Profile from './Profile';
+import useGetProfile from '../../hooks/useFetchData';
+import { BASE_URL } from '../../config';
 
 const Myaccount = () => {
 
   const { dispatch } = useContext(authContext);
   const [tab, setTab] = useState('bookings');
+
+  const {data:userData, loading, error} = useGetProfile(`${BASE_URL}/user/profile/me`);
 
   const handleLogout = ()=>{
     dispatch({type: 'LOGOUT'});
