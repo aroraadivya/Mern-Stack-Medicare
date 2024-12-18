@@ -25,6 +25,9 @@ const Myaccount = () => {
       <div className='max-w-[1170] px-5 mx-auto'>
 
         {loading && <Loading/>}
+
+        {error && <Error/>}
+
         {
           !loading && !error && (<div className='grid md:grid-cols-3 gap-10'>
             <div className='pb-[50px] px-[30px] rounded-md'>
