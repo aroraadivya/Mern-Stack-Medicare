@@ -9,24 +9,36 @@ const useFetchData = (url) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch(url, {
-                headers: {Authorization: `Bearer ${token}`}
-            })
 
-            const result = await res.json();
+            setLoading(true);
+            try {
+                const res = await fetch(url, {
+                    headers: { Authorization: `Bearer ${token}` }
+                })
 
-            if(!res.ok){
-                return toast.error(result.message);
+                const result = await res.json();
+
+                if (!res.ok) {
+                    throw new Error(result.message + 'failed');
+                }
+
+                setData(result.data);
+                setLoading(false);
+            }  catch (err) {
+                setLoading(false);
+                setError(err.message);
             }
         }
-    },[]);
-  
-  
-    return (
-        <div>
 
-        </div>
-  );
+        fetchData();
+    },[url]);
+  
+  
+    return {
+        data,
+        loading,
+        error,  
+    }
 };
 
 export default useFetchData
